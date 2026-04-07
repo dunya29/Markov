@@ -1,0 +1,23 @@
+<!--faq-->
+<section class="section faq">
+    <div class="container">
+        <div class="sec-top">
+            <div class="page-lbl">[fAQ]</div>
+            <div class="sec-top__r">
+                <h2><%- title %></h2>
+            </div>
+        </div>
+        <div class="faq__items">
+            <%- include('accordion.ejs', { title: 'Расчётный час&nbsp;заселения', active: true, image: false, innerTxt: `<p>Заезд&nbsp;—
+                15:00&nbsp;Выезд&nbsp;— 12:00</p>
+            <p>Условия раннего заезда: ранний заезд с&nbsp;00:01&nbsp;до&nbsp;06:00–100% от&nbsp;стоимости суток ранний заезд
+                с&nbsp;06:01&nbsp;до&nbsp;15:00–50% от&nbsp;стоимости суток</p>
+            <p>Условия позднего выезда: поздний выезд до&nbsp;18:00–50% от&nbsp;стоимости суток поздний выезд после&nbsp;18:00–100% от&nbsp;стоимости суток</p>
+            <p>Ранний заезд и&nbsp;поздний выезд происходит по&nbsp;запросу гостя по&nbsp;факту и&nbsp;при&nbsp;наличии номеров.</p>` }) %>
+            <%- include('accordion.ejs', { title: 'Список документов при&nbsp;заселении', active: false, image: false, innerTxt: false }) %>
+            <%- include('accordion.ejs', { title: 'Правила заселения с&nbsp;животными', active: false, image: false, innerTxt: false}) %>
+            <%- include('accordion.ejs', { title: 'Что&nbsp;включено в&nbsp;проживание', active: false, image: true, innerTxt: false }) %>
+            <%- include('accordion.ejs', { title: 'Стоимость дополнительных мест', active: false, image: true, innerTxt: false }) %>
+        </div>
+    </div>
+</section>

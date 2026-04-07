@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <%- include('partials/head.ejs', {
+    "title": "Главная"
+    })%>
+
+    <body>
+        <div class="wrap">
+            <%- include('partials/header.ejs', {"main": true})%>
+            <!--main-->
+            <main class="main">
+                <!--intro-->
+                <section class="mb-80 intro">
+                    <div class="container">
+                        <div class="media-cover intro__preview">
+                            <picture>
+                                <source srcset="img/content/main-intro.webp" type="image/webp" media="(min-width: 767.98px)">
+                                <source srcset="img/content/main-intro.jpg" media="(min-width: 767.98px)">
+                                <img class="intro__img" src="img/content/main-intro.jpg" alt>
+                            </picture>
+                            <video class="intro__video" poster="img/content/main-intro.jpg" loop muted playsinline>
+                                <source data-src="media/intro.webm" type="video/webm">
+                                <source data-src="media/intro.mp4" type="video/mp4">
+                            </video>
+                            <div class="intro__play">
+                                <button class="play-btn"><svg><use xlink:href="img/svg/sprite.svg#play"></use></svg></button>
+                            </div>
+                        </div>
+                        <div class="mb-40 intro__play intro__play--desk">
+                            <button class="play-btn"><svg><use xlink:href="img/svg/sprite.svg#play"></use></svg></button>
+                        </div>
+                        <div class="mb-24 intro__content">
+                            <h1>Пространство уюта в&nbsp;сердце истории города</h1>
+                            <p>Свобода и&nbsp;удобство с&nbsp;сервисом отеля в&nbsp;центре города</p>
+                        </div>
+                        <%- include('partials/booking.ejs') %>
+                    </div>
+                </section>
+                <!--about-->
+                <section class="section about">
+                    <!--info-block-->
+                    <section class="mb-60 info-block info-block--about">
+                        <div class="container">
+                            <div class="sec-top">
+                                <div class="page-lbl">[О нас]</div>
+                                <div class="sec-top__r">
+                                    <h2>Вдохновение историей. Современный комфорт</h2>
+                                </div>
+                            </div>
+                            <div class="grid-2col info-block__row">
+                                <div class="info-block__l">
+                                    <div class="info-block__badge">
+                                        <div class="text-l"><span>27</span></div>
+                                        <span class="info-block__badge-txt">уютных номера</span>
+                                    </div>
+                                </div>
+                                <div class="info-block__r">
+                                    <div class="mb-24 page-content">
+                                        <p>Наш апарт-отель предлагает своим гостям 27&nbsp;уютных и&nbsp;современных номеров различных категорий, от&nbsp;комфортабельных
+                                            стандартов до&nbsp;роскошных двухэтажных люксов. Расположенный в&nbsp;живописном районе [Название района], он&nbsp;сочетает
+                                            в&nbsp;себе
+                                            удобство домашней обстановки с&nbsp;высоким уровнем сервиса и&nbsp;гостиничного обслуживания. На&nbsp;территории отеля к&nbsp;вашим
+                                            услугам [перечислите основные удобства, например: бесплатный Wi-Fi, парковка, ресторан, детская площадка]</p>
+                                    </div>
+                                    <div class="info-block__footer">
+                                        <a href="#" class="btn text-btn"><span>подробнее</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <%- include('partials/gallery.ejs', {
+                    items: [
+                    { nmb: 1, tag: 'уютные номера' },
+                    { nmb: 2, tag: 'зона reception' },
+                    { nmb: 3, tag: 'парковка для&nbsp;гостей' },
+                    { nmb: 4, tag: 'лобби' },
+                    { nmb: 1, tag: 'уютные номера' },
+                    { nmb: 2, tag: 'лобби'}
+                    ]})%>
+                </section>
+                <%- include('partials/rooms-swiper.ejs', {"title": "Выберите свой идеальный номер", "showMore": true, "text": true})%>
+                <!--cards-->
+                <section class="section cards">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[предложения]</div>
+                            <div class="sec-top__r">
+                                <h2>путешествуйте выгодно</h2>
+                            </div>
+                        </div>
+                        <div class="cards__wrapper">
+                            <div class="cards__items">
+                                <%- include('partials/item-card.ejs', { nmb: 1 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 2 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 3 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 4 }) %>
+                            </div>
+                            <div class="sec-bottom">
+                                <a href="#" class="btn stroke-btn">
+                                    <span>смотреть все</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--price-includes-->
+                <section class="section price-includes">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[входит в&nbsp;стоимость]</div>
+                        </div>
+                        <div class="price-includes__items">
+                            <div class="item-include">
+                                <h3 class="item-include__title">бесплатный wi&nbsp;fi</h3>
+                                <div class="media-contain"><img src="img/content/include-1.jpg" alt></div>
+                            </div>
+                            <div class="item-include">
+                                <h3 class="item-include__title">Рабочие зоны в&nbsp;лобби отеля</h3>
+                                <div class="media-contain">
+                                    <img src="img/content/include-1.jpg" alt>
+                                </div>
+                            </div>
+                            <div class="item-include">
+                                <h3 class="item-include__title">бесплатная парковка</h3>
+                                <div class="media-contain">
+                                    <img src="img/content/include-1.jpg" alt>
+                                </div>
+                            </div>
+                            <div class="item-include">
+                                <h3 class="item-include__title">Бронирование билетов</h3>
+                                <div class="media-contain">
+                                    <img src="img/content/include-1.jpg" alt>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--main-services-->
+                <section class="section main-services">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[услуги за дополнительную оплату]</div>
+                            <div class="sec-top__r">
+                                <h2>расширенные возможности</h2>
+                            </div>
+                        </div>
+                        <div class="main-services__items">
+                            <%- include('partials/item-service.ejs', {"title": "услуги трансфера", "nmb": 1}) %>
+                            <%- include('partials/item-service.ejs', {"title": "Организация анимационной программы", "nmb": 2}) %>
+                            <%- include('partials/item-service.ejs', {"title": "Трансфер до&nbsp;SPA", "nmb": 3}) %>
+                            <%- include('partials/item-service.ejs', {"title": "Организация зон&nbsp;частных мероприятий/переговорных", "nmb": 2}) %>
+                            <%- include('partials/item-service.ejs', {"title": "Консьерж-сервис", "nmb": 4}) %>
+                            <%- include('partials/item-service.ejs', {"title": "Проживание с&nbsp;питомцем", "nmb": 5}) %>
+                            <%- include('partials/item-service.ejs', {"title": "Организация экскурсий", "nmb": 6}) %>
+                        </div>
+                        <div class="sec-bottom">
+                            <a href="#" class="btn stroke-btn">
+                                <span>подробнее об&nbsp;услугах</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!--info-block-->
+                <section class="section info-block info-block--food">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[еда]</div>
+                            <div class="sec-top__r">
+                                <h2>Ресторан и&nbsp;бар</h2>
+                            </div>
+                        </div>
+                        <div class="grid-2col info-block__row">
+                            <div class="info-block__l-wrapper">
+                                <div class="before-after-slider">
+                                    <div class="beer-slider">
+                                        <img src="img/content/rest-2.jpg" alt>
+                                        <div class="beer-reveal">
+                                            <img src="img/content/rest.jpg" alt>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-block__r">
+                                <div class="mb-24 page-content">
+                                    <h3>Гастрономический дуализм: от&nbsp;простоты к&nbsp;изысканности</h3>
+                                    <p>Ресторан нашего апарт-отеля меняет своё настроение в&nbsp;течение дня: утром и&nbsp;днём это&nbsp;уютное кафе, где&nbsp;вы&nbsp;можете
+                                        насладиться вкусным завтраком и&nbsp;лёгкими блюдами в&nbsp;формате пансиона или&nbsp;полупансиона. Вечером&nbsp;же&nbsp;пространство
+                                        преображается в&nbsp;элегантный ресторан с&nbsp;авторским меню a la carte, создавая идеальную атмосферу для&nbsp;романтического ужина
+                                        или&nbsp;деловой встречи.</p>
+                                </div>
+                                <div class="mb-40 features">
+                                    <div class="features__item">
+                                        <span class="features__icon"><img src="img/svg/icons/clock.svg" alt></span>
+                                        <span class="features__txt">07:00–17:00&nbsp;— кофейня a la carte</span>
+                                    </div>
+                                    <div class="features__item">
+                                        <span class="features__icon"><img src="img/svg/icons/people.svg" alt></span>
+                                        <span class="features__txt">До 70 человек</span>
+                                    </div>
+                                    <div class="features__item">
+                                        <span class="features__icon"><img src="img/svg/icons/clock.svg" alt></span>
+                                        <span class="features__txt">18:00–23:00&nbsp;— ресторан à la carte</span>
+                                    </div>
+                                    <div class="features__item">
+                                        <span class="features__icon"><img src="img/svg/icons/kitchen.svg" alt></span>
+                                        <span class="features__txt">Ближневосточная и&nbsp;средиземноморская</span>
+                                    </div>
+                                </div>
+                                <div class="info-block__btns">
+                                    <a href="#" class="btn main-btn" target="_blank"><span>основное меню</span></a>
+                                    <a href="#" class="btn stroke-btn"><span>подробнее</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-2col info-block__row">
+                            <div class="info-block__l-wrapper">
+                                <div class="media-el info-block__img">
+                                    <img src="img/content/rest.jpg" alt>
+                                </div>
+                            </div>
+                            <div class="info-block__r">
+                                <div class="mb-24 page-content">
+                                    <h3>Лобби-бар: Гармония вкуса и&nbsp;комфорта</h3>
+                                    <p>Также&nbsp;в&nbsp;нашем лобби-баре вас&nbsp;ждёт широкий выбор напитков и&nbsp;лёгких закусок&nbsp;— отличное место для&nbsp;отдыха
+                                        и&nbsp;общения в&nbsp;любое время&nbsp;дня.</p>
+                                </div>
+                                <div class="mb-40 features">
+                                    <div class="features__item">
+                                        <span class="features__icon"><img src="img/svg/icons/clock.svg" alt></span>
+                                        <span class="features__txt">Круглосуточно</span>
+                                    </div>
+                                </div>
+                                <div class="info-block__btns">
+                                    <a href="#" class="btn main-btn" target="_blank"><span>основное меню</span></a>
+                                    <a href="#" class="btn stroke-btn"><span>подробнее</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--advants-->
+                <section class="section advants">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[наши преимущества]</div>
+                            <div class="sec-top__r">
+                                <div class="sec-top__content">
+                                    <h2>почему выбирают нас</h2>
+                                    <p>Ваш идеальный маршрут начинается у&nbsp;нашего ресепшена: мы&nbsp;поможем с&nbsp;билетами и&nbsp;раскроем секреты города.
+                                        А&nbsp;вернувшись «домой», вы&nbsp;оцените высокоскоростной Wi-Fi и&nbsp;бесплатную парковку. Мы&nbsp;создали все&nbsp;условия
+                                        для&nbsp;тех, кто&nbsp;ценит комфорт, время и&nbsp;свободу путешествовать с&nbsp;теми, кто&nbsp;дорог&nbsp;—
+                                        даже&nbsp;с&nbsp;четвероногими
+                                        друзьями.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advants__items">
+                            <div class="item-advant">
+                                <div class="mb-40 item-advant__icon">
+                                    <img src="img/svg/icons/pets.svg" alt>
+                                </div>
+                                <div class="item-advant__content">
+                                    <h4>Проживание с&nbsp;животными</h4>
+                                    <p>Ваш питомец&nbsp;— желанный гость в&nbsp;нашем отеле.</p>
+                                </div>
+                            </div>
+                            <div class="item-advant">
+                                <div class="mb-40 item-advant__icon">
+                                    <img src="img/svg/icons/parking.svg" alt>
+                                </div>
+                                <div class="item-advant__content">
+                                    <h4>Парковка на&nbsp;территории отеля</h4>
+                                    <p>Припаркуйте автомобиль бесплатно и&nbsp;забудьте о&nbsp;лишних расходах.</p>
+                                </div>
+                            </div>
+                            <div class="item-advant">
+                                <div class="mb-40 item-advant__icon">
+                                    <img src="img/svg/icons/wifi.svg" alt>
+                                </div>
+                                <div class="item-advant__content">
+                                    <h4>Бесплатный Wi-Fi&nbsp;— везде</h4>
+                                    <p>Стабильный интернет на&nbsp;всей территории для&nbsp;работы и&nbsp;общения.</p>
+                                </div>
+                            </div>
+                            <div class="item-advant">
+                                <div class="mb-40 item-advant__icon">
+                                    <img src="img/svg/icons/concierge.svg" alt>
+                                </div>
+                                <div class="item-advant__content">
+                                    <h4>Консьерж-сервис</h4>
+                                    <p>Решим любой вопрос. Поможем с&nbsp;организацией досуга. Гастрономическое обслуживание номеров</p>
+                                </div>
+                            </div>
+                            <div class="item-advant">
+                                <div class="mb-40 item-advant__icon">
+                                    <img src="img/svg/icons/transport.svg" alt>
+                                </div>
+                                <div class="item-advant__content">
+                                    <h4>Помощь с&nbsp;транспортом</h4>
+                                    <p>Забронируем для&nbsp;вас&nbsp;билеты на&nbsp;любой вид&nbsp;транспорта. Организуем трансфер из&nbsp;любой точки города</p>
+                                </div>
+                            </div>
+                            <div class="item-advant">
+                                <div class="mb-40 item-advant__icon">
+                                    <img src="img/svg/icons/print.svg" alt>
+                                </div>
+                                <div class="item-advant__content">
+                                    <h4>Печать документов</h4>
+                                    <p>Бесплатно распечатаем всё&nbsp;необходимое для&nbsp;работы или&nbsp;путешествия.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--reviews-->
+                <section class="section fancy-block swiper-4 reviews">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[Отзывы]</div>
+                            <div class="sec-top__r">
+                                <h2>Истории наших гостей</h2>
+                                <div class="nav-btns">
+                                    <button class="nav-btn nav-btn--prev"><svg><use xlink:href="img/svg/sprite.svg#btn-prev"></use></svg></button>
+                                    <button class="nav-btn nav-btn--next"><svg><use xlink:href="img/svg/sprite.svg#btn-next"></use></svg></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__wrapper">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><%- include('partials/item-review.ejs', {"nmb": 1}) %></div>
+                                    <div class="swiper-slide"><%- include('partials/item-review.ejs', {"nmb": 2}) %></div>
+                                    <div class="swiper-slide"><%- include('partials/item-review.ejs', {"nmb": 3}) %></div>
+                                    <div class="swiper-slide"><%- include('partials/item-review.ejs', {"nmb": 4}) %></div>
+                                    <div class="swiper-slide"><%- include('partials/item-review.ejs', {"nmb": 5}) %></div>
+                                </div>
+                            </div>
+                            <div class="sec-bottom">
+                                <button class="btn stroke-btn" data-fancy="review-gallery" data-src="img/content/review-1.jpg">
+                                    <span>смотреть все отзывы на</span>
+                                    <img class="yandex" src="img/svg/yandex.svg" alt>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--contacts-->
+                <section class="section contacts">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[контакты]</div>
+                            <div class="sec-top__r">
+                                <h2>Как добраться</h2>
+                            </div>
+                        </div>
+                        <div class="mb-60 ml-50 contacts__content">
+                            <p>603001, Россия, Нижегородская область<br>г..&nbsp;Нижний Новгород,&nbsp;ул..&nbsp;Ильинская, 1А</p>
+                            <p><a href="tel:88001001033">8 800 100-10-33</a></p>
+                            <a
+                                href="https://yandex.com/maps/47/nizhny-novgorod/house/ilyinskaya_ulitsa_1a/YEoYfw5lSkIAQFtsfX9zeH9jZg==/?ll=43.995378%2C56.329302&source=constructorLink&um=constructor%3A346b5767c6477f6b6884779aabeef53275e5d7556bcb29c57dc4ac516b058219&z=17.11"
+                                target="_blank" class="btn text-btn"><span>открыть навигатор</span></a>
+                        </div>
+                        <div class="contacts__map">
+                            <div class="map" id="contacts-map"></div>
+                        </div>
+                    </div>
+                </section>
+                <%- include('partials/faq.ejs', {title: 'Часто задаваемые вопросы'})%>
+            </main>
+            <%- include('partials/footer.ejs', {"main": true})%>
+            <%- include('partials/modal.ejs')%>
+            <%- include('partials/map.ejs')%>
+        </div>
+        <%- include('partials/js.ejs')%>
+    </body>
+
+</html>

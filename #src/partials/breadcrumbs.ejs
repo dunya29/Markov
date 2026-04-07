@@ -1,0 +1,12 @@
+<!--breadcrumbs-->
+<div class="breadcrumbs">
+    <div class="container">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <% if (typeof page1 !== 'undefined' && page1) { %>
+                <li><a href="#"><%- page1 %></a></li>
+            <% } %>
+            <li><%- page %></li>
+        </ul>
+    </div>
+</div>

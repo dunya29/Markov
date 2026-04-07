@@ -1,0 +1,63 @@
+:root {
+    --content-width: 148rem;
+    --container-offset: clamp(4rem, 3.125vw, 6rem);
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+    --font-family: "OverpassMono", monospace;
+    --font-family-heading: "CormorantGaramond", serif;
+    --black: #111111;
+    --white: #ffffff;
+    --white-rgb: 255, 255, 255;
+    --primary-color: #591a0b;
+    --primary-color-rgb: 89, 26, 11;
+    --primary-color-hover: #450600;
+    --primary-color-active: #450600;
+    --gray-color: rgba(17, 17, 17, 0.4);
+    --mocha: #574030;
+    --mocha-rgb: 87, 64, 48;
+    --oat-milk: #6b5445;
+    --oat-milk-rgb: 107, 84, 69;
+    --warm-beige: #b69889;
+    --beige: #cdbcae;
+    --beige-rgb: 205, 188, 174;
+    --cloud: #eae6e1;
+    --cloud-rgb: 234, 230, 225;
+    --error-color: #f71d22;
+    --scrollbar-color: #eae6e1;
+    --scrollbar-thumb-color: #591a0b;
+    --header-h: 9rem;
+    --main-offset: 5.2rem;
+    --scale: clamp(0.5rem, 1vw, 1rem);
+}
+
+$bp1: 1450.98px;
+$bp2: 1250.98px;
+$bp3: 1030.98px;
+$bp4: 767.98px;
+$bp5: 575.98px;
+$bp6: 479.98px;
+
+@media (min-width: 1920.98px) {
+    :root {
+        --content-width: 100%;
+        --container-offset: clamp(6rem, 0.04vw, 10rem);
+        --container-width: 100%;
+    }
+}
+@media (max-width: $bp1) {
+    :root {
+        --container-offset: clamp(1.6rem, 3.125vw, 4rem);
+        --header-h: 8.5rem;
+        --main-offset: 3.2rem;
+    }
+}
+@media (max-width: $bp3) {
+    :root {
+        --container-offset: 1.6rem;
+         --header-h: 5.5rem;
+    }
+}
+@media (min-width: $bp5) and (max-width: $bp4){
+    :root {
+        --container-offset: 4rem;
+    }
+}

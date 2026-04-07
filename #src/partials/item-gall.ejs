@@ -1,0 +1,9 @@
+<!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><img src="img/content/gallery-<%= nmb %>.jpg" alt></div>
+    <div class="item-gall__features">
+        <% if (typeof tag !== 'undefined' && tag) {%>
+        <span><%- tag %></span>
+        <% } %>
+    </div>
+</div>

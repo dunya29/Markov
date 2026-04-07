@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon/favicon-32x32.png">
+    <link type="image/png" sizes="192x192" rel="icon" href="img/favicon/android-icon-192x192.png">
+    <link type="image/svg+xml" sizes="any" rel="icon" href="img/favicon/favicon.svg">
+    <link sizes="120x120" rel="apple-touch-icon" href="img/favicon/apple-icon-120x120.png">
+    <link sizes="180x180" rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="fonts/OverpassMono-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/beerslider.min.css">
+    <link rel="stylesheet" href="css/air-datepicker.min.css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <title>Об отеле</title>
+</head>
+
+    <body>
+        <div class="wrap">
+             <!--header-->
+<header class="header fixed-block ">
+    <div class="header__desk">
+        <div class="container">
+            <div class="header__desk-inner">
+                <div class="header__logo"><a href="#"><img src="img/svg/logo.svg" alt="Логотип Марков"></a></div>
+                <div class="header__info">
+                    <div class="header__info-item">
+                        <p><a href="89000090000">+7 900 009-00-00</a></p>
+                        <p>Служба приёма и&nbsp;размещения</p>
+                    </div>
+                    <div class="header__info-item">
+                        <p>Нижний Новогород, ул.&nbsp;Нижегородская, 10&nbsp;А</p>
+                    </div>
+                </div>
+                <div class="header__actions">
+                    <div class="header__lang">
+                        <a class="active" href="#">Rus</a>
+                        <a href="#">En</a>
+                        <a href="#">中文</a>
+                    </div>
+                    <div class="social-list">
+                        <ul>
+                            <li><a href="#" target="_blank"><svg><use xlink:href="img/svg/sprite.svg#whatsapp"></use></svg></a></li>
+                        </ul>
+                    </div>
+                    <div class="header__social">
+                        <ul>
+                            <li><a href="#" target="_blank">Whats up</a></li>
+                            <li><a href="#" target="_blank">Telegram</a></li>
+                            <li><a href="#" target="_blank">You tube</a></li>
+                            <li><a href="#" target="_blank">Vk</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn text-btn"><span>забронировать</span></a>
+                </div>
+                <nav class="header__menu header__menu--left">
+                    <ul>
+                        <li><a href="#">Об отеле</a></li>
+                        <li><a href="#">Номера</a></li>
+                        <li><a href="#">Ресторан и бар</a></li>
+                        <li><a href="#">Услуги</a></li>
+                    </ul>
+                </nav>
+                <nav class="header__menu header__menu--right">
+                    <ul>
+                        <li><a href="#">Предложения</a></li>
+                        <li><a href="#">События</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="header__mob">
+        <div class="container">
+            <div class="header__mob-inner">
+                <div class="header__logo-mob"><a href="#"><img src="img/svg/logo-text.svg" alt="Логотип Марков"></a></div>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="#" target="_blank"><svg><use xlink:href="img/svg/sprite.svg#whatsapp"></use></svg></a></li>
+                    </ul>
+                </div>
+                <div role="button" class="icon-menu" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            <!--main-->
+            <main class="main">
+                <!--intro-->
+                <section class="mb-80 intro">
+                    <div class="container">
+                        <div class="media-cover intro__preview">
+                            <picture>
+                                <source srcset="img/content/about-intro.webp" type="image/webp" media="(min-width: 767.98px)">
+                                <source srcset="img/content/about-intro.jpg" media="(min-width: 767.98px)">
+                                <img class="intro__img" src="img/content/about-intro.jpg" alt>
+                            </picture>
+                            <video class="intro__video" poster="img/content/main-intro.jpg" loop muted playsinline>
+                                <source data-src="media/intro.webm" type="video/webm">
+                                <source data-src="media/intro.mp4" type="video/mp4">
+                            </video>
+                            <div class="intro__play">
+                                <button class="play-btn"><svg><use xlink:href="img/svg/sprite.svg#play"></use></svg></button>
+                            </div>
+                        </div>
+                        <div class="mb-40 intro__play intro__play--desk">
+                            <button class="play-btn"><svg><use xlink:href="img/svg/sprite.svg#play"></use></svg></button>
+                        </div>
+                        <div class="mb-24 intro__content">
+                            <h1>Об отеле</h1>
+                                <p>Вдохновение историей. Современный комфорт</p>
+                        </div>
+                        <!--booking-bar-->
+<div class="booking-bar">
+    <picture>
+        <source srcset="img/svg/booking-ex-mob.svg" media="(max-width: 767.98px)">
+        <img src="img/svg/booking-ex.svg" alt>
+    </picture>
+</div>
+                    </div>
+                </section>
+                <!--about-->
+                <section class="section about">
+                    <!--info-block-->
+                    <section class="mb-60 info-block info-block--about">
+                        <div class="container">
+                            <div class="sec-top">
+                                <div class="page-lbl">[О нас]</div>
+                                <div class="sec-top__r">
+                                    <h2>Вдохновение историей. Современный комфорт</h2>
+                                </div>
+                            </div>
+                            <div class="grid-2col info-block__row">
+                                <div class="info-block__l">
+                                    <div class="info-block__badge">
+                                        <div class="text-l"><span>27</span></div>
+                                        <span class="info-block__badge-txt">уютных номера</span>
+                                    </div>
+                                </div>
+                                <div class="info-block__r">
+                                    <div class="mb-24 page-content">
+                                        <p>Наш апарт-отель предлагает своим гостям 27&nbsp;уютных и&nbsp;современных номеров различных категорий, от&nbsp;комфортабельных
+                                            стандартов до&nbsp;роскошных двухэтажных люксов. Расположенный в&nbsp;живописном районе [Название района], он&nbsp;сочетает
+                                            в&nbsp;себе
+                                            удобство домашней обстановки с&nbsp;высоким уровнем сервиса и&nbsp;гостиничного обслуживания. На&nbsp;территории отеля к&nbsp;вашим
+                                            услугам [перечислите основные удобства, например: бесплатный Wi-Fi, парковка, ресторан, детская площадка]</p>
+                                    </div>
+                                    <div class="info-block__footer">
+                                        <a href="#" class="btn text-btn"><span>подробнее</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--gallery-->
+<div class="swiper-4 gallery">
+    <div class="container">
+        <div class="sec-top">
+            <div class="sec-top__r">
+                <div class="nav-btns">
+                    <button class="nav-btn nav-btn--prev"><svg><use xlink:href="img/svg/sprite.svg#btn-prev"></use></svg></button>
+                    <button class="nav-btn nav-btn--next"><svg><use xlink:href="img/svg/sprite.svg#btn-next"></use></svg></button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-1.webp" type="image/webp"><img src="img/content/gallery-1.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+        <span>уютные номера</span>
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-2.webp" type="image/webp"><img src="img/content/gallery-2.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+        <span>зона reception</span>
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-3.webp" type="image/webp"><img src="img/content/gallery-3.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+        <span>парковка для&nbsp;гостей</span>
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-4.webp" type="image/webp"><img src="img/content/gallery-4.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+        <span>лобби</span>
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-1.webp" type="image/webp"><img src="img/content/gallery-1.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+        <span>уютные номера</span>
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-2.webp" type="image/webp"><img src="img/content/gallery-2.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+        <span>лобби</span>
+        
+    </div>
+</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+                </section>
+                <!--advants-->
+                <section class="section advants">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[наши преимущества]</div>
+                            <div class="sec-top__r">
+                                <h2 class="h3">Мы предлагаем Гостям высококлассный сервис и&nbsp;широкий набор услуг для&nbsp;комфортного пребывания, работы
+                                    и&nbsp;отдыха:</h2>
+                            </div>
+                        </div>
+                        <div class="mb-40 advants__wrapper">
+                            <div class="advants__items">
+                                <div class="item-advant">
+                                    <div class="mb-40 item-advant__icon">
+                                        <img src="img/svg/icons/pets.svg" alt>
+                                    </div>
+                                    <div class="item-advant__content">
+                                        <h4>Проживание с&nbsp;животными</h4>
+                                        <p>Ваш питомец&nbsp;— желанный гость в&nbsp;нашем отеле.</p>
+                                    </div>
+                                </div>
+                                <div class="item-advant">
+                                    <div class="mb-40 item-advant__icon">
+                                        <img src="img/svg/icons/parking.svg" alt>
+                                    </div>
+                                    <div class="item-advant__content">
+                                        <h4>Парковка на&nbsp;территории отеля</h4>
+                                        <p>Припаркуйте автомобиль бесплатно и&nbsp;забудьте о&nbsp;лишних расходах.</p>
+                                    </div>
+                                </div>
+                                <div class="item-advant">
+                                    <div class="mb-40 item-advant__icon">
+                                        <img src="img/svg/icons/wifi.svg" alt>
+                                    </div>
+                                    <div class="item-advant__content">
+                                        <h4>Бесплатный Wi-Fi&nbsp;— везде</h4>
+                                        <p>Стабильный интернет на&nbsp;всей территории для&nbsp;работы и&nbsp;общения.</p>
+                                    </div>
+                                </div>
+                                <div class="item-advant">
+                                    <div class="mb-40 item-advant__icon">
+                                        <img src="img/svg/icons/concierge.svg" alt>
+                                    </div>
+                                    <div class="item-advant__content">
+                                        <h4>Консьерж-сервис</h4>
+                                        <p>Решим любой вопрос. Поможем с&nbsp;организацией досуга. Гастрономическое обслуживание номеров</p>
+                                    </div>
+                                </div>
+                                <div class="item-advant">
+                                    <div class="mb-40 item-advant__icon">
+                                        <img src="img/svg/icons/transport.svg" alt>
+                                    </div>
+                                    <div class="item-advant__content">
+                                        <h4>Помощь с&nbsp;транспортом</h4>
+                                        <p>Забронируем для&nbsp;вас&nbsp;билеты на&nbsp;любой вид&nbsp;транспорта. Организуем трансфер из&nbsp;любой точки города</p>
+                                    </div>
+                                </div>
+                                <div class="item-advant">
+                                    <div class="mb-40 item-advant__icon">
+                                        <img src="img/svg/icons/print.svg" alt>
+                                    </div>
+                                    <div class="item-advant__content">
+                                        <h4>Печать документов</h4>
+                                        <p>Бесплатно распечатаем всё&nbsp;необходимое для&nbsp;работы или&nbsp;путешествия.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec-bottom">
+                                <a href="#" class="btn stroke-btn">
+                                    <span>Подробнее об услугах отеля</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="warn-block">
+                            <div class="warn-block__content">
+                                <p>Просим вас&nbsp;учесть, что&nbsp;согласно законодательству РФ&nbsp;для&nbsp;заселения потребуются оригиналы документов, удостоверяющих
+                                    личность, для&nbsp;всех проживающих в&nbsp;номере гостей: паспорт для&nbsp;гостей от&nbsp;14&nbsp;лет и&nbsp;свидетельство о&nbsp;рождении
+                                    для&nbsp;детей от&nbsp;0&nbsp;до&nbsp;14&nbsp;лет.</p>
+                                <p>Обратите внимание, что&nbsp;документом, удостоверяющим личность, для&nbsp;граждан РФ&nbsp;на&nbsp;территории РФ&nbsp;является внутренний
+                                    паспорт гражданина России.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--about-media-->
+                <section class="section swiper-1 about-media">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="media-cover">
+                                    <picture><source srcset="img/content/about-1.webp" type="image/webp"><img src="img/content/about-1.jpg" alt></picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="media-cover">
+                                    <picture><source srcset="img/content/about-intro.webp" type="image/webp"><img src="img/content/about-intro.jpg" alt></picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="media-cover">
+                                    <picture><source srcset="img/content/about-1.webp" type="image/webp"><img src="img/content/about-1.jpg" alt></picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-btns">
+                        <button class="nav-btn nav-btn--prev"><svg><use xlink:href="img/svg/sprite.svg#btn-prev"></use></svg></button>
+                        <button class="nav-btn nav-btn--next"><svg><use xlink:href="img/svg/sprite.svg#btn-next"></use></svg></button>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </section>
+                <!--faq-->
+<section class="section faq">
+    <div class="container">
+        <div class="sec-top">
+            <div class="page-lbl">[fAQ]</div>
+            <div class="sec-top__r">
+                <h2>Правила заселения</h2>
+            </div>
+        </div>
+        <div class="faq__items">
+            <div class="accordion active">
+    <div
+        class="accordion__header active"
+        role="button"
+        tabindex="0"
+        aria-expanded="true">
+        <h3 class="h4">Расчётный час&nbsp;заселения</h3>
+        <div class="accordion__icon" aria-hidden="true"></div>
+    </div>
+
+    
+    <div class="accordion__body" style="display: block;">
+        
+            <div class="accordion__content">
+                <div class="accordion__inner">
+                    
+                    <div class="page-content">
+                        
+
+                        <p>Заезд&nbsp;—
+                15:00&nbsp;Выезд&nbsp;— 12:00</p>
+            <p>Условия раннего заезда: ранний заезд с&nbsp;00:01&nbsp;до&nbsp;06:00–100% от&nbsp;стоимости суток ранний заезд
+                с&nbsp;06:01&nbsp;до&nbsp;15:00–50% от&nbsp;стоимости суток</p>
+            <p>Условия позднего выезда: поздний выезд до&nbsp;18:00–50% от&nbsp;стоимости суток поздний выезд после&nbsp;18:00–100% от&nbsp;стоимости суток</p>
+            <p>Ранний заезд и&nbsp;поздний выезд происходит по&nbsp;запросу гостя по&nbsp;факту и&nbsp;при&nbsp;наличии номеров.</p>
+
+                        
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="accordion ">
+    <div
+        class="accordion__header "
+        role="button"
+        tabindex="0"
+        aria-expanded="false">
+        <h3 class="h4">Список документов при&nbsp;заселении</h3>
+        <div class="accordion__icon" aria-hidden="true"></div>
+    </div>
+
+    
+        <div class="accordion__body">
+            
+            <div class="accordion__content">
+                <div class="accordion__inner">
+                    
+                    <div class="page-content">
+                        
+                        <p>Подземная охраняемая парковка отеля предлагает просторное и&nbsp;безопасное место для&nbsp;вашего автомобиля. Оснащённая современными системами
+                            безопасности и&nbsp;постоянно находящаяся под&nbsp;охраной, подземная парковка является идеальным решением для&nbsp;тех, кто&nbsp;путешествует
+                            на&nbsp;автомобиле.</p>
+                        <p>Также&nbsp;в&nbsp;отеле предусмотрена парковка для&nbsp;хранения велосипедов. Используйте нашу велосипедную парковку, чтобы&nbsp;с&nbsp;уверенностью
+                            оставлять свой велосипед и&nbsp;наслаждаться всеми удобствами, которые предлагает наш&nbsp;отель.</p>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="accordion ">
+    <div
+        class="accordion__header "
+        role="button"
+        tabindex="0"
+        aria-expanded="false">
+        <h3 class="h4">Правила заселения с&nbsp;животными</h3>
+        <div class="accordion__icon" aria-hidden="true"></div>
+    </div>
+
+    
+        <div class="accordion__body">
+            
+            <div class="accordion__content">
+                <div class="accordion__inner">
+                    
+                    <div class="page-content">
+                        
+                        <p>Подземная охраняемая парковка отеля предлагает просторное и&nbsp;безопасное место для&nbsp;вашего автомобиля. Оснащённая современными системами
+                            безопасности и&nbsp;постоянно находящаяся под&nbsp;охраной, подземная парковка является идеальным решением для&nbsp;тех, кто&nbsp;путешествует
+                            на&nbsp;автомобиле.</p>
+                        <p>Также&nbsp;в&nbsp;отеле предусмотрена парковка для&nbsp;хранения велосипедов. Используйте нашу велосипедную парковку, чтобы&nbsp;с&nbsp;уверенностью
+                            оставлять свой велосипед и&nbsp;наслаждаться всеми удобствами, которые предлагает наш&nbsp;отель.</p>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="accordion ">
+    <div
+        class="accordion__header "
+        role="button"
+        tabindex="0"
+        aria-expanded="false">
+        <h3 class="h4">Что&nbsp;включено в&nbsp;проживание</h3>
+        <div class="accordion__icon" aria-hidden="true"></div>
+    </div>
+
+    
+        <div class="accordion__body">
+            
+            <div class="accordion__content">
+                <div class="accordion__inner">
+                    
+                    <div class="media-el">
+                        <picture><source srcset="img/content/services-1.webp" type="image/webp"><img src="img/content/services-1.jpg" alt></picture>
+                    </div>
+                    
+                    <div class="page-content">
+                        
+                        <p>Подземная охраняемая парковка отеля предлагает просторное и&nbsp;безопасное место для&nbsp;вашего автомобиля. Оснащённая современными системами
+                            безопасности и&nbsp;постоянно находящаяся под&nbsp;охраной, подземная парковка является идеальным решением для&nbsp;тех, кто&nbsp;путешествует
+                            на&nbsp;автомобиле.</p>
+                        <p>Также&nbsp;в&nbsp;отеле предусмотрена парковка для&nbsp;хранения велосипедов. Используйте нашу велосипедную парковку, чтобы&nbsp;с&nbsp;уверенностью
+                            оставлять свой велосипед и&nbsp;наслаждаться всеми удобствами, которые предлагает наш&nbsp;отель.</p>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="accordion ">
+    <div
+        class="accordion__header "
+        role="button"
+        tabindex="0"
+        aria-expanded="false">
+        <h3 class="h4">Стоимость дополнительных мест</h3>
+        <div class="accordion__icon" aria-hidden="true"></div>
+    </div>
+
+    
+        <div class="accordion__body">
+            
+            <div class="accordion__content">
+                <div class="accordion__inner">
+                    
+                    <div class="media-el">
+                        <picture><source srcset="img/content/services-1.webp" type="image/webp"><img src="img/content/services-1.jpg" alt></picture>
+                    </div>
+                    
+                    <div class="page-content">
+                        
+                        <p>Подземная охраняемая парковка отеля предлагает просторное и&nbsp;безопасное место для&nbsp;вашего автомобиля. Оснащённая современными системами
+                            безопасности и&nbsp;постоянно находящаяся под&nbsp;охраной, подземная парковка является идеальным решением для&nbsp;тех, кто&nbsp;путешествует
+                            на&nbsp;автомобиле.</p>
+                        <p>Также&nbsp;в&nbsp;отеле предусмотрена парковка для&nbsp;хранения велосипедов. Используйте нашу велосипедную парковку, чтобы&nbsp;с&nbsp;уверенностью
+                            оставлять свой велосипед и&nbsp;наслаждаться всеми удобствами, которые предлагает наш&nbsp;отель.</p>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</section>
+                <!--contacts-->
+                <section class="section contacts">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[контакты]</div>
+                            <div class="sec-top__r">
+                                <h2>Как добраться</h2>
+                            </div>
+                        </div>
+                        <div class="mb-40 ml-50 contacts__content">
+                            <p>603001, Россия, Нижегородская область<br>г..&nbsp;Нижний Новгород,&nbsp;ул..&nbsp;Ильинская, 1А</p>
+                            <p><a href="tel:88001001033">8 800 100-10-33</a></p>
+                            <a
+                                href="https://yandex.com/maps/47/nizhny-novgorod/house/ilyinskaya_ulitsa_1a/YEoYfw5lSkIAQFtsfX9zeH9jZg==/?ll=43.995378%2C56.329302&source=constructorLink&um=constructor%3A346b5767c6477f6b6884779aabeef53275e5d7556bcb29c57dc4ac516b058219&z=17.11"
+                                target="_blank" class="btn text-btn"><span>открыть навигатор</span></a>
+                        </div>
+                        <div class="contacts__map">
+                            <div class="map" id="contacts-map"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!--footer-->
+<footer class="footer ">
+    <div class="container">
+        <div class="mb-40 footer__logo"><a href="#"><img src="img/svg/logo.svg" alt="Логотип Марков"></a></div>
+        <div class="mb-40 footer__rows">
+            <div class="footer__row">
+                <div class="footer__contacts">
+                    <div class="footer__contacts-item">
+                        <p class="h5"><a href="tel:89000090000">+7 900 009-00-00</a></p>
+                        <p class="h5"><a href="mailto:test@mail.com">test@mail.com</a></p>
+                        <p>Служба бронирования</p>
+                    </div>
+                    <div class="footer__contacts-item">
+                        <p class="h5"><a href="tel:89000090000">+7 900 009-00-00</a></p>
+                        <p>Служба приёма и&nbsp;размещения</p>
+                    </div>
+                    <div class="footer__contacts-item footer__contacts-item--adress">
+                        <p class="h5">603001, Россия, Нижегородская область,г..&nbsp;Нижний Новгород, ул..&nbsp;Ильинская, 1А</p>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <ul>
+                        <li><a href="#" target="_blank">Whats up</a></li>
+                        <li><a href="#" target="_blank">Telegram</a></li>
+                        <li><a href="#" target="_blank">You tube</a></li>
+                        <li><a href="#" target="_blank">Vk</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__navs">
+                    <nav>
+                        <ul>
+                            <li><a href="#">«Семейный» люкс 2-х комнатный</a></li>
+                            <li><a href="#">Люкс с ванной</a></li>
+                            <li><a href="#">2-х уровневый люкс</a></li>
+                            <li><a href="#">2-х уровневый делюкс</a></li>
+                            <li><a href="#">Стандарт для&nbsp;маломобильных гостей</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Стандарт твин</a></li>
+                            <li><a href="#">Стандарт дабл</a></li>
+                            <li><a href="#">Комфорт твин</a></li>
+                            <li><a href="#">Комфорт дабл</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Об отеле</a></li>
+                            <li><a href="#">Ресторан и&nbsp;бар</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Акции</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__texts">
+                    <p><a href="#" target="_blank">Политика конфиденциальности и&nbsp;условия обработки персональных данных.</a></p>
+                    <p><a href="#" target="_blank">Внутренние правила проживания и&nbsp;пользования услугами</a></p>
+                    <p><a href="#" target="_blank">Выписка из&nbsp;единого реестра объектов классификации</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copy">2005–2026 © сайт.ru</p>
+            <div class="footer__dev">
+                <span>Разработка</span>
+                <a href="https://omniagency.ru/" target="_blank" rel="nofollow">
+                    <img src="img/svg/dev.svg" alt="Omniagency">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+            <!--cookie-->
+<div class="cookie fixed-block" id="cookie-popup">
+    <div class="cookie__inner">
+        <button class="btn-cross" onclick="Utils.CookieUtils.hide()"></button>
+        <div class="mb-40 cookie__content">
+            <h3>Мы используем cookies.</h3>
+            <p>Используя сайт, вы&nbsp;соглашаетесь с&nbsp;нашей политикой использования cookie-файлов. Cookies можно отключить в&nbsp;настройках вашего браузера.</p>
+        </div>
+        <div class="cookie__btns">
+            <button class="btn stroke-btn cookie__accept"><span>хорошо</span></button>
+        </div>
+    </div>
+</div>
+<!--map-modal-->
+<modal class="custom-scroll modal map-modal" id="map-modal">
+    <div class="custom-scroll modal__content">
+        <button type="button" class="btn-cross modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="mb-24 modal__top">
+            <h2 class="h3">Апарт-отель «Марков»</h2>
+        </div>
+        <div class="map-modal__inner">
+            <p>603001, Россия, Нижегородская область<br>г..&nbsp;Нижний Новгород,&nbsp;ул..&nbsp;Ильинская, 1А</p>
+            <p><a href="tel:88001001033">8 800 100-10-33</a></p>
+            <a
+                href="https://yandex.com/maps/47/nizhny-novgorod/house/ilyinskaya_ulitsa_1a/YEoYfw5lSkIAQFtsfX9zeH9jZg==/?ll=43.995378%2C56.329302&source=constructorLink&um=constructor%3A346b5767c6477f6b6884779aabeef53275e5d7556bcb29c57dc4ac516b058219&z=17.11"
+                target="_blank" class="btn text-btn"><span>открыть навигатор</span></a>
+        </div>
+    </div>
+</modal>
+<!--events-modal-->
+<modal class="custom-scroll modal events-modal" id="events-modal">
+    <div class="custom-scroll modal__content">
+        <button type="button" class="btn-cross modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="mb-24 modal__top">
+            <h2 class="h3">Какое мероприятие хотели&nbsp;бы устроить?</h2>
+        </div>
+        <form class="form" novalidate onsubmit="event.preventDefault();Utils.FormUtils.formReset(this);Utils.ModalUtils.openSuccessMod()">
+            <input type="hidden" value data-datepicker-value>
+            <div class="mb-24 form__items">
+                <div class="ui-control ui-input">
+                    <div class="ui-input__inp">
+                        <input type="text" placeholder=" " required>
+                        <div class="ui-input__placeholder">Ваше имя *</div>
+                        <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                    </div>
+                    <span data-error>Заполните поле</span>
+                </div>
+                <div class="ui-control ui-input">
+                    <div class="ui-input__inp">
+                        <input type="email" placeholder=" " required>
+                        <div class="ui-input__placeholder">E-mail *</div>
+                        <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                    </div>
+                    <span data-error>Заполните поле</span>
+                </div>
+                <div class="ui-control ui-input">
+                    <div class="ui-input__inp">
+                        <input type="tel" placeholder=" " required>
+                        <div class="ui-input__placeholder">Телефон *</div>
+                        <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                    </div>
+                    <span data-error>Заполните поле</span>
+                </div>
+                <div class="ui-control ui-input">
+                    <textarea placeholder="Опишите мероприятие"
+                        oninput="this.style.height = '';this.style.height = this.scrollHeight + 'px'"></textarea>
+                </div>
+            </div>
+            <div class="h4">Выберите желаемое время звонка:</div>
+            <div class="mb-24 form__items">
+                <div class="dropdown dropdown--date" aria-expanded="false">
+                    <div class="dropdown__header">
+                        <svg><use xlink:href="img/svg/sprite.svg#date"></use></svg>
+                        <span>29 октября 2025</span>
+                        <svg class="dropdown__icon"><use xlink:href="img/svg/sprite.svg#chevron-bot"></use></svg>
+                    </div>
+                    <div class="dropdown__body">
+                        <div class="custom-scroll">
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown radio-select" aria-expanded="false">
+                    <div class="dropdown__header">
+                        <svg><use xlink:href="img/svg/sprite.svg#time"></use></svg>
+                        <span>09:00–10:00</span>
+                        <svg class="dropdown__icon"><use xlink:href="img/svg/sprite.svg#chevron-bot"></use></svg>
+                    </div>
+                    <div class="dropdown__body">
+                        <div class="custom-scroll">
+                            <div class="dropdown__options">
+                                <label>
+                                    <input type="radio" name="event-time">
+                                    <span>09:00–10:00</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="event-time">
+                                    <span>10:00–11:00</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="event-time">
+                                    <span>11:00–12:00</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="event-time">
+                                    <span>12:00–13:00</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="event-time">
+                                    <span>13:00–14:00</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__footer">
+                <div class="mb-24 ui-control">
+                    <label class="ui-checkbox">
+                        <input type="checkbox" required>
+                        <span>Отправляя данную форму, вы&nbsp;соглашаетесь <a href="#" target="_blank">с&nbsp;Политикой конфиденциальности</a></span>
+                    </label>
+                    <span data-error>Требуется согласие</span>
+                </div>
+                <button type="submit" class="btn main-btn" onclick="Utils.FormUtils.formValidate(event, this.closest('form'))">
+                    <span>Отправить</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</modal>
+<!--success-modal-->
+<modal class="custom-scroll modal success-modal" id="success-modal">
+    <div class="custom-scroll modal__content">
+        <button type="button" class="btn-cross modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="mb-24 modal__top">
+            <h2 class="h3"></h2>
+            <p></p>
+        </div>
+        <button class="btn stroke-btn modal__close">
+            <span></span>
+        </button>
+    </div>
+</modal>
+<!--error-modal-->
+<modal class="custom-scroll modal error-modal" id="error-modal">
+    <div class="custom-scroll modal__content">
+        <button type="button" class="btn-cross modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="mb-24 modal__top">
+            <h2 class="h3"></h2>
+            <p></p>
+        </div>
+        <button class="btn main-btn modal__close">
+            <span></span>
+        </button>
+    </div>
+</modal>
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+<script>
+    let center = [56.329302, 43.995377];
+    let coords = [56.329302, 43.995377]
+    let contactsMap
+    function init() {
+        contactsMap = new ymaps.Map('contacts-map', {
+            center: center,
+            zoom: 15
+        });
+
+        setmapDefaults(contactsMap);
+        const placemark = new ymaps.Placemark(coords, {}, {
+                iconLayout: "default#image",
+                iconImageHref: "img/svg/map-marker.svg",
+                iconImageSize: [72, 84],
+                iconImageOffset: [-36, -42],
+                cursor: "grab",
+                hideIconOnBalloonOpen: false,
+                balloonOffset: [130, 0]
+            }
+        );
+
+        contactsMap.geoObjects.add(placemark);
+    }
+    ymaps.ready(init);
+</script>
+
+        </div>
+        <!--scripts-->
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/libs/inputmask.min.js"></script>
+<script src="js/libs/beerslider.min.js"></script>
+<script src="js/libs/air-datepicker.min.js"></script>
+<script src="js/main.js"></script>
+    </body>
+
+</html>

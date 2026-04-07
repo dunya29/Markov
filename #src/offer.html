@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <%- include('partials/head.ejs', {
+    "title": "Раннее бронирование"
+    })%>
+
+    <body>
+        <div class="wrap">
+            <%- include('partials/header.ejs', {"main": false})%>
+            <!--main-->
+            <main class="main">
+                <%- include('partials/breadcrumbs.ejs', {"page1": "Предложения", "page": "Раннее бронирование"})%>
+                <!--about-->
+                <section class="section about">
+                    <!--info-block-->
+                    <section class="mb-60 info-block info-block--offer">
+                        <div class="container">
+                            <div class="grid-2col info-block__row">
+                                <div class="info-block__l">
+                                    <div class="info-block__badge">
+                                        <div class="text-l"><span>20%</span></div>
+                                        <span class="info-block__badge-txt">максимальная скидка</span>
+                                    </div>
+                                </div>
+                                <div class="info-block__r">
+                                    <div class="mb-24 info-block__head">
+                                        <h1 class="h2">Раннее бронирование</h1>
+                                        <h2 class="h4">Максимальная скидка 20%</h2>
+                                    </div>
+                                    <div class="mb-20 page-content">
+                                        <p>Забронируйте номер заранее и&nbsp;гарантируйте себе до&nbsp;20% скидки, независимо от&nbsp;того, идёте вы&nbsp;на&nbsp;встречу
+                                            с&nbsp;друзьями, в&nbsp;деловую поездку или&nbsp;желаете просто отдохнуть от&nbsp;суеты. Мы&nbsp;знаем, как&nbsp;важно быть
+                                            уверенным
+                                            в&nbsp;своих планах, поэтому предлагаем вам&nbsp;специальные условия с&nbsp;гибкой отменой бронирования. Выберите удобство
+                                            с&nbsp;гарантией лучшей цены в&nbsp;Пальмира Бизнес Клуб.</p>
+                                        <p>В&nbsp;каждое предложение включено:</p>
+                                        <p>Завтрак в&nbsp;формате шведского стола&nbsp;— начните день с&nbsp;вкусного и&nbsp;разнообразного завтрака.</p>
+                                        <p>SPA-комплекс&nbsp;— расслабьтесь в&nbsp;финской сауне с&nbsp;видом на&nbsp;Москву-реку, насладитесь хаммамом и&nbsp;зоной
+                                            релаксации.</p>
+                                        <p>Тренажёрный зал&nbsp;— поддерживайте форму даже&nbsp;в&nbsp;отпуске благодаря нашему современному тренажёрному залу.</p>
+                                        <p>Условия акции:</p>
+                                        <p>Предоплата за&nbsp;первые сутки проживания. В&nbsp;случае отмены бронирования менее чем&nbsp;за&nbsp;24&nbsp;часа до&nbsp;даты
+                                            заезда,
+                                            стоимость первой ночи не&nbsp;возвращается.</p>
+                                        <p>SPA-центр доступен с&nbsp;07:00&nbsp;до&nbsp;24:00. Обратите внимание, что&nbsp;в&nbsp;случае проведения процедур, доступ
+                                            к&nbsp;финской
+                                            сауне и&nbsp;хаммаму может быть ограничен.</p>
+                                        <p>Акция не&nbsp;суммируется с&nbsp;другими предложениями. Отель оставляет за&nbsp;собой право изменить условия акции
+                                            без&nbsp;предварительного уведомления.</p>
+                                        <p>Предложение не&nbsp;распространяется на&nbsp;группы, бронирующие 10&nbsp;или&nbsp;более номеров. Даты проживания могут быть
+                                            ограничены.</p>
+                                        <p>Количество номеров по&nbsp;акции ограничено.</p>
+                                        <p>Гибкие условия отмены&nbsp;— мы&nbsp;понимаем, что&nbsp;планы могут измениться, поэтому предлагаем вам&nbsp;удобные условия
+                                            для&nbsp;изменения или&nbsp;отмены бронирования.</p>
+                                        <p>Выберите ваш&nbsp;идеальный отдых:</p>
+                                    </div>
+                                    <div class="info-block__footer">
+                                        <div class="mb-24 info-block__offer">
+                                            <div class="h4">Скидка 20%</div>
+                                            <p>Оптимально для&nbsp;тех, кто&nbsp;привык планировать вперёд</p>
+                                        </div>
+                                        <a href="#" class="btn main-btn"><span>забронировать по&nbsp;акции</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <%- include('partials/gallery.ejs', {
+                    items: [
+                    { nmb: 1 },
+                    { nmb: 2 },
+                    { nmb: 3 },
+                    { nmb: 4 },
+                    { nmb: 1 },
+                    { nmb: 2 }
+                    ]})%>
+                </section>
+                <!--offer-swiper-->
+                <section class="section swiper-4 offer-swiper">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="sec-top__r">
+                                <h2>Другие предложения</h2>
+                                <div class="nav-btns">
+                                    <button class="nav-btn nav-btn--prev"><svg><use xlink:href="img/svg/sprite.svg#btn-prev"></use></svg></button>
+                                    <button class="nav-btn nav-btn--next"><svg><use xlink:href="img/svg/sprite.svg#btn-next"></use></svg></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><%- include('partials/item-card.ejs', { nmb: 2 }) %></div>
+                                <div class="swiper-slide"><%- include('partials/item-card.ejs', { nmb: 3 }) %></div>
+                                <div class="swiper-slide"><%- include('partials/item-card.ejs', { nmb: 4 }) %></div>
+                                <div class="swiper-slide"><%- include('partials/item-card.ejs', { nmb: 1 }) %></div>
+                                <div class="swiper-slide"><%- include('partials/item-card.ejs', { nmb: 2 }) %></div>
+                                <div class="swiper-slide"><%- include('partials/item-card.ejs', { nmb: 3 }) %></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <%- include('partials/footer.ejs', {"main": false})%>
+            <%- include('partials/modal.ejs')%>
+        </div>
+        <%- include('partials/js.ejs')%>
+    </body>
+
+</html>

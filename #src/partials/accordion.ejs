@@ -1,0 +1,41 @@
+<div class="accordion <%= active ? 'active' : '' %>">
+    <div
+        class="accordion__header <%= active ? 'active' : '' %>"
+        role="button"
+        tabindex="0"
+        aria-expanded="<%= active ? 'true' : 'false' %>">
+        <h3 class="h4"><%- title %></h3>
+        <div class="accordion__icon" aria-hidden="true"></div>
+    </div>
+
+    <% if (active) { %>
+    <div class="accordion__body" style="display: block;">
+        <% } else { %>
+        <div class="accordion__body">
+            <% } %>
+            <div class="accordion__content">
+                <div class="accordion__inner">
+                    <% if (image) { %>
+                    <div class="media-el">
+                        <img src="img/content/services-1.jpg" alt>
+                    </div>
+                    <% } %>
+                    <div class="page-content">
+                        <% if (!innerTxt) { %>
+                        <p>Подземная охраняемая парковка отеля предлагает просторное и&nbsp;безопасное место для&nbsp;вашего автомобиля. Оснащённая современными системами
+                            безопасности и&nbsp;постоянно находящаяся под&nbsp;охраной, подземная парковка является идеальным решением для&nbsp;тех, кто&nbsp;путешествует
+                            на&nbsp;автомобиле.</p>
+                        <p>Также&nbsp;в&nbsp;отеле предусмотрена парковка для&nbsp;хранения велосипедов. Используйте нашу велосипедную парковку, чтобы&nbsp;с&nbsp;уверенностью
+                            оставлять свой велосипед и&nbsp;наслаждаться всеми удобствами, которые предлагает наш&nbsp;отель.</p>
+                        <% } else { %>
+
+                        <%- innerTxt %>
+
+                        <% } %>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>

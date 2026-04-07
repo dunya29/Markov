@@ -1,0 +1,46 @@
+<!--item-room-->
+<div class="item-room">
+    <div class="item-room__main">
+        <div class="item-room__preview">
+            <div class="item-room__images">
+                <div class="item-room__img active" data-src="img/content/room-1-l.jpg" data-fancy="room-gallery-<%=nmb%>" data-caption="<%-title%>">
+                    <img src="img/content/room-<%=nmb%>.jpg" alt>
+                </div>
+                <div class="item-room__img" data-src="img/content/room-2-l.jpg" data-fancy="room-gallery-<%=nmb%>" data-caption="<%-title%>">
+                    <img src="img/content/room-2.jpg" alt>
+                </div>
+                <div class="item-room__img" data-src="img/content/room-1-l.jpg" data-fancy="room-gallery-<%=nmb%>" data-caption="<%-title%>">
+                    <img src="img/content/room-3.jpg" alt>
+                </div>
+                <div class="item-room__img" data-src="img/content/room-2-l.jpg" data-fancy="room-gallery-<%=nmb%>" data-caption="<%-title%>">
+                    <img src="img/content/room-4.jpg" alt>
+                </div>
+            </div>
+            <div class="item-room__hovers">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="item-room__controls">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="item-room__features">
+            <span><img src="img/svg/icons/area.svg" alt>54 м2</span>
+            <span><img src="img/svg/icons/bed.svg" alt>2 кровати</span>
+            <span><img src="img/svg/icons/plan.svg" alt>2 комнаты</span>
+        </div>
+    </div>
+    <div class="item-room__content">
+        <h3 class="h4"><%- title %></h3>
+        <% if (typeof text !== 'undefined' && text) { %>
+        <p>Побалуйте себя роскошным отдыхом в&nbsp;нашем люксе с&nbsp;ванной на&nbsp;третьем этаже. Ощутите релакс в&nbsp;уютной мансардной обстановке, наслаждаясь
+            гидромассажем после&nbsp;насыщенного дня.</p>
+        <% } %>
+        <a href="#" class="btn text-btn"><span>подробнее</span></a>
+    </div>
+</div>

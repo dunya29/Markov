@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <%- include('partials/head.ejs', {
+    "title": "Номера"
+    })%>
+
+    <body>
+        <div class="wrap">
+            <%- include('partials/header.ejs', {"main": false})%>
+            <!--main-->
+            <main class="main">
+                <!--intro-->
+                <section class="mb-80 intro">
+                    <div class="container">
+                        <div class="media-cover intro__preview">
+                            <picture>
+                                <source srcset="img/content/rooms-intro.webp" type="image/webp" media="(min-width: 767.98px)">
+                                <source srcset="img/content/rooms-intro.jpg" media="(min-width: 767.98px)">
+                                <img class="intro__img" src="img/content/rooms-intro.jpg" alt>
+                            </picture>
+                        </div>
+                        <div class="mb-24 intro__content">
+                            <h1>номера</h1>
+                            <p>Выберите свой идеальный номер</p>
+                        </div>
+                        <%- include('partials/booking.ejs') %>
+                    </div>
+                </section>
+            </main>
+            <%- include('partials/footer.ejs', {"main": false})%>
+            <%- include('partials/modal.ejs')%>
+            <%- include('partials/map.ejs')%>
+        </div>
+        <%- include('partials/js.ejs')%>
+    </body>
+
+</html>

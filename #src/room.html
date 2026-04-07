@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <%- include('partials/head.ejs', {
+    "title": "Стандарт для маломобильных гостей"
+    })%>
+
+    <body>
+        <div class="wrap">
+            <%- include('partials/header.ejs', {"main": false})%>
+            <!--main-->
+            <main class="main">
+                <%- include('partials/breadcrumbs.ejs', {"page1": "Номера", "page": "Стандарт для&nbsp;маломобильных гостей"})%>
+                <!--room-media-->
+                <section class="section fancy-block swiper-1 room-media">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="media-cover" data-src="img/content/room-3-l.webp" data-fancy="room-gallery">
+                                    <img src="img/content/room-3-l.jpg" alt>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="media-cover" data-src="img/content/room-2-l.webp" data-fancy="room-gallery">
+                                    <img src="img/content/room-2-l.jpg" alt>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="media-cover" data-src="img/content/room-1-l.webp" data-fancy="room-gallery">
+                                    <img src="img/content/room-1-l.jpg" alt>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-btns">
+                        <button class="nav-btn nav-btn--prev"><svg><use xlink:href="img/svg/sprite.svg#btn-prev"></use></svg></button>
+                        <button class="nav-btn nav-btn--next"><svg><use xlink:href="img/svg/sprite.svg#btn-next"></use></svg></button>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="image-zoom" role="button">
+                        <svg><use xlink:href="img/svg/sprite.svg#zoom"></use></svg>
+                        <span>открыть фото</span>
+                    </div>
+                </section>
+                <!--info-block-->
+                <section class="section info-block info-block--room">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[О номере]</div>
+                            <div class="sec-top__r">
+                                <h2>Стандарт для&nbsp;маломобильных гостей</h2>
+                            </div>
+                        </div>
+                        <div class="grid-2col info-block__row">
+                            <div class="info-block__l">
+                                <div class="info-block__l-wrapper">
+                                    <div class="features">
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/area.svg" alt></span>
+                                            <span class="features__txt">Площадь 45–76 м²</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/people.svg" alt></span>
+                                            <span class="features__txt">До 6 гостей</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/view.svg" alt></span>
+                                            <span class="features__txt">Вид на город</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/bed.svg" alt></span>
+                                            <span class="features__txt">2 раздельные кровати и 1 двуспальная кровать</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/cold.svg" alt></span>
+                                            <span class="features__txt">Кондиционер</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/safe.svg" alt></span>
+                                            <span class="features__txt">Сейф</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/fridge.svg" alt></span>
+                                            <span class="features__txt">Мини-холодильник</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/slippers.svg" alt></span>
+                                            <span class="features__txt">Халат и тапочки</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/room-service.svg" alt></span>
+                                            <span class="features__txt">Room service</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/hair-dryer.svg" alt></span>
+                                            <span class="features__txt">Фен</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-24 info-block__r">
+                                <div class="page-content">
+                                    <p>Номера стандарт обеспечивают все&nbsp;потребности для&nbsp;приятного проживания и&nbsp;безмятежного&nbsp;сна. Вас&nbsp;ждёт большая
+                                        кровать, наборы для&nbsp;приготовления чая&nbsp;и&nbsp;кофе, а&nbsp;также бесплатный Wi-Fi.</p>
+                                    <p>Среди дополнительных удобств&nbsp;— увеличивающее зеркало и&nbsp;фен. Номера этой категории предлагаются с&nbsp;одной двуспальной
+                                        кроватью или&nbsp;двумя кроватями Twin.</p>
+                                    <p>Санузел оснащён специализированным оборудованием для&nbsp;маломобильных гостей: сантехникой, опорными поручнями, а&nbsp;также
+                                        эргономичными устройствами личной гигиены.</p>
+                                </div>
+                            </div>
+                            <div class="info-block__footer">
+                                <div class="mb-40 info-block__offer">
+                                    <div class="h4">от&nbsp;8 000&nbsp;₽/сутки</div>
+                                    <p>Самая выгодная цена на&nbsp;28&nbsp;января 2026</p>
+                                </div>
+                                <div class="info-block__footer">
+                                    <a href="#" class="btn main-btn"><span>забронировать</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <%- include('partials/rooms-swiper.ejs', {"title": "Другие номера", "showMore": false, "text": false})%>
+            </main>
+            <%- include('partials/footer.ejs', {"main": false})%>
+            <%- include('partials/modal.ejs')%>
+        </div>
+        <%- include('partials/js.ejs')%>
+    </body>
+
+</html>

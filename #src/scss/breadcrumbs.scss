@@ -1,0 +1,32 @@
+.breadcrumbs {
+    @include mb-24;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        li {
+            margin-bottom: .8rem;
+            display: flex;
+            align-items: center;
+            opacity: 0.4;
+            transition: all .3s linear;
+            &:after {
+                content: "";
+                display: block;
+                width: 1.6rem;
+                height: 1.6rem;
+                background: url(../img/svg/chevron-r.svg) center / contain no-repeat;
+                margin: 0 .5rem .3rem;
+            }
+            &:last-child {
+                opacity: 1;
+            }
+            &:last-child:after {
+                display: none;
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

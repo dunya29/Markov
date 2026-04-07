@@ -1,0 +1,81 @@
+@mixin fz-150 {
+    font-size: clamp(12rem, 6rem + 4.6875vw, 15rem);
+}
+@mixin fz-80 {
+    font-size: clamp(6rem, 2rem + 3.125vw, 8rem);
+    @media (max-width: $bp1) {
+        font-size: clamp(4.2rem, 1.5rem + 3.51vw, 6rem);
+    }
+    @media (max-width: $bp2) {
+        font-size: clamp(3.8rem, 3.42rem + 1.01vw, 4.2rem);
+    }
+}
+@mixin fz-60 {
+    font-size: clamp(4rem, -1.6rem + 4.375vw, 6rem);
+    @media (max-width: $bp1) {
+        font-size: clamp(3rem, 1.5rem + 1.95vw, 4rem);
+    }
+    @media (max-width: $bp2) {
+        font-size: clamp(2.8rem, 2.61rem + 0.51vw, 3rem);
+    }
+}
+@mixin fz-59 {
+    font-size: clamp(5rem, 3.2rem + 1.41vw, 5.9rem);
+    @media (max-width: $bp1) {
+        font-size: clamp(3.9rem, 2.25rem + 2.15vw, 5rem);
+    }
+    @media (max-width: $bp2) {
+        font-size: clamp(3.7rem, 3.51rem + 0.51vw, 3.9rem);
+    }
+}
+@mixin fz-40 {
+    font-size: clamp(3.2rem, 1.6rem + 1.25vw, 4rem);
+    @media (max-width: $bp1) {
+        font-size: clamp(2.65rem, 1.82rem + 1.07vw, 3.2rem);
+    }
+    @media (max-width: $bp2) {
+        font-size: clamp(2.6rem, 2.55rem + 0.13vw, 2.65rem);
+    }
+}
+@mixin fz-38 {
+    font-size: clamp(3rem, 1.4rem + 1.25vw, 3.8rem);
+    @media (max-width: $bp1) {
+        font-size: clamp(2.82rem, 2.55rem + 0.35vw, 3rem);
+    }
+    @media (max-width: $bp2) {
+        font-size: clamp(2.8rem, 2.78rem + 0.05vw, 2.82rem);
+    }
+}
+@mixin fz-24 {
+    font-size: clamp(2rem, 1.2rem + 0.625vw, 2.4rem);
+    @media (max-width: $bp1) {
+        font-size: clamp(1.8rem, 1.717rem + 0.22vw, 2rem);
+    }
+}
+@mixin fz-20 {
+    font-size: clamp(1.8rem, 1.751rem + 0.13vw, 2rem);
+}
+@mixin fz-18 {
+    font-size: clamp(1.6rem, 1.2rem + 0.3125vw, 1.8rem);
+}
+@mixin fz-17 {
+    font-size: clamp(1.5rem, 1.45rem + 0.13vw, 1.7rem);
+}
+@mixin fz-16 {
+    font-size: clamp(1.4rem, 1rem + 0.3125vw, 1.6rem);
+}
+@mixin fz-15 {
+    font-size: clamp(1.4rem, 1.376rem + 0.065vw, 1.5rem);
+}
+@mixin fz-14 {
+    font-size: clamp(1.2rem, 1.151rem + 0.13vw, 1.4rem);
+}
+@mixin fz-13 {
+    font-size: clamp(1.1rem, 0.7rem + 0.3125vw, 1.3rem);
+}
+@mixin fz-12 {
+    font-size: clamp(1.2rem, 1rem + 0.15625vw, 1.3rem);
+}
+@mixin fz-11 {
+    font-size: 1.1rem;
+}

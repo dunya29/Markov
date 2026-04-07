@@ -1,0 +1,23 @@
+<!--gallery-->
+<div class="swiper-4 gallery">
+    <div class="container">
+        <div class="sec-top">
+            <div class="sec-top__r">
+                <div class="nav-btns">
+                    <button class="nav-btn nav-btn--prev"><svg><use xlink:href="img/svg/sprite.svg#btn-prev"></use></svg></button>
+                    <button class="nav-btn nav-btn--next"><svg><use xlink:href="img/svg/sprite.svg#btn-next"></use></svg></button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <% items.forEach(item => { %>
+                <div class="swiper-slide">
+                    <%- include('item-gall.ejs', item) %>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>

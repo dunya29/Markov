@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon/favicon-32x32.png">
+    <link type="image/png" sizes="192x192" rel="icon" href="img/favicon/android-icon-192x192.png">
+    <link type="image/svg+xml" sizes="any" rel="icon" href="img/favicon/favicon.svg">
+    <link sizes="120x120" rel="apple-touch-icon" href="img/favicon/apple-icon-120x120.png">
+    <link sizes="180x180" rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="fonts/OverpassMono-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/beerslider.min.css">
+    <link rel="stylesheet" href="css/air-datepicker.min.css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+    <title>Ресторан и бар</title>
+</head>
+
+    <body>
+        <div class="wrap">
+             <!--header-->
+<header class="header fixed-block ">
+    <div class="header__desk">
+        <div class="container">
+            <div class="header__desk-inner">
+                <div class="header__logo"><a href="#"><img src="img/svg/logo.svg" alt="Логотип Марков"></a></div>
+                <div class="header__info">
+                    <div class="header__info-item">
+                        <p><a href="89000090000">+7 900 009-00-00</a></p>
+                        <p>Служба приёма и&nbsp;размещения</p>
+                    </div>
+                    <div class="header__info-item">
+                        <p>Нижний Новогород, ул.&nbsp;Нижегородская, 10&nbsp;А</p>
+                    </div>
+                </div>
+                <div class="header__actions">
+                    <div class="header__lang">
+                        <a class="active" href="#">Rus</a>
+                        <a href="#">En</a>
+                        <a href="#">中文</a>
+                    </div>
+                    <div class="social-list">
+                        <ul>
+                            <li><a href="#" target="_blank"><svg><use xlink:href="img/svg/sprite.svg#whatsapp"></use></svg></a></li>
+                        </ul>
+                    </div>
+                    <div class="header__social">
+                        <ul>
+                            <li><a href="#" target="_blank">Whats up</a></li>
+                            <li><a href="#" target="_blank">Telegram</a></li>
+                            <li><a href="#" target="_blank">You tube</a></li>
+                            <li><a href="#" target="_blank">Vk</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn text-btn"><span>забронировать</span></a>
+                </div>
+                <nav class="header__menu header__menu--left">
+                    <ul>
+                        <li><a href="#">Об отеле</a></li>
+                        <li><a href="#">Номера</a></li>
+                        <li><a href="#">Ресторан и бар</a></li>
+                        <li><a href="#">Услуги</a></li>
+                    </ul>
+                </nav>
+                <nav class="header__menu header__menu--right">
+                    <ul>
+                        <li><a href="#">Предложения</a></li>
+                        <li><a href="#">События</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="header__mob">
+        <div class="container">
+            <div class="header__mob-inner">
+                <div class="header__logo-mob"><a href="#"><img src="img/svg/logo-text.svg" alt="Логотип Марков"></a></div>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="#" target="_blank"><svg><use xlink:href="img/svg/sprite.svg#whatsapp"></use></svg></a></li>
+                    </ul>
+                </div>
+                <div role="button" class="icon-menu" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            <!--main-->
+            <main class="main">
+                <!--intro-->
+                <section class="mb-80 intro">
+                    <div class="container">
+                        <div class="media-cover intro__preview">
+                            <picture>
+                                <source srcset="img/content/rest-intro.webp" type="image/webp" media="(min-width: 767.98px)">
+                                <source srcset="img/content/rest-intro.jpg" media="(min-width: 767.98px)">
+                                <img class="intro__img" src="img/content/rest-intro.jpg" alt>
+                            </picture>
+                        </div>
+                        <div class="mb-24 intro__content">
+                            <h1>Ресторан и бар</h1>
+                            <p>Гастрономический дуализм: от&nbsp;простоты к&nbsp;изысканности</p>
+                        </div>
+                        <!--booking-bar-->
+<div class="booking-bar">
+    <picture>
+        <source srcset="img/svg/booking-ex-mob.svg" media="(max-width: 767.98px)">
+        <img src="img/svg/booking-ex.svg" alt>
+    </picture>
+</div>
+                    </div>
+                </section>
+                <!--about-->
+                <section class="section about">
+                    <!--info-block-->
+                    <section class="mb-60 info-block info-block--rest">
+                        <div class="container">
+                            <div class="sec-top">
+                                <div class="page-lbl">[ресторан]</div>
+                                <div class="sec-top__r">
+                                    <h2>Гастрономический дуализм: от&nbsp;простоты к&nbsp;изысканности</h2>
+                                </div>
+                            </div>
+                            <div class="ml-50 mb-24">
+                                <div class="page-content">
+                                    <p>Ресторан нашего апарт-отеля меняет своё настроение в&nbsp;течение дня: утром и&nbsp;днём это&nbsp;уютное кафе, где&nbsp;вы&nbsp;можете
+                                        насладиться вкусным завтраком и&nbsp;лёгкими блюдами в&nbsp;формате пансиона или&nbsp;полупансиона. Вечером&nbsp;же&nbsp;пространство
+                                        преображается в&nbsp;элегантный ресторан с&nbsp;авторским меню a la carte, создавая идеальную атмосферу для&nbsp;романтического ужина
+                                        или&nbsp;деловой встречи.</p>
+                                </div>
+                            </div>
+                            <div class="switch-block">
+                                <div class="pl-50 mb-24 tabs custom-scroll">
+                                    <span class="h4 active" data-tab="1">Кофейня [7:00–17:00]</span>
+                                    <span class="h4" data-tab="2">ресторан [17:30–23:00]</span>
+                                </div>
+                                <div class="grid-2col info-block__row">
+                                    <div class="info-block__l-wrapper">
+                                        <div class="media-el info-block__img">
+                                            <picture><source srcset="img/content/rest.webp" type="image/webp"><img src="img/content/rest.jpg" alt></picture>
+                                        </div>
+                                    </div>
+                                    <div class="info-block__r">
+                                        <div class="active" data-block="1">
+                                            <div class="mb-24 page-content">
+                                                <p>Какое‑нибудь небольшое описание о&nbsp;том, что&nbsp;ждёт гостя в&nbsp;кофейне. Какое‑нибудь небольшое описание
+                                                    о&nbsp;том,
+                                                    что&nbsp;ждёт гостя в&nbsp;кофейне. Какое‑нибудь небольшое описание о&nbsp;том, что&nbsp;ждёт гостя в&nbsp;кофейне.
+                                                    Какое‑нибудь небольшое описание о&nbsp;том, что&nbsp;ждёт гостя в&nbsp;кофейне.</p>
+                                            </div>
+                                            <div class="mb-24 features">
+                                                <div class="features__item">
+                                                    <span class="features__icon"><img src="img/svg/icons/clock.svg" alt></span>
+                                                    <span class="features__txt">07:00–17:00</span>
+                                                </div>
+                                                <div class="features__item">
+                                                    <span class="features__icon"><img src="img/svg/icons/people.svg" alt></span>
+                                                    <span class="features__txt">До 80 человек</span>
+                                                </div>
+                                                <div class="features__item">
+                                                    <span class="features__icon"><img src="img/svg/icons/area.svg" alt></span>
+                                                    <span class="features__txt">Площадь 250 м²</span>
+                                                </div>
+                                                <div class="features__item">
+                                                    <span class="features__icon"><img src="img/svg/icons/phone.svg" alt></span>
+                                                    <span class="features__txt">+7 900 555-66-66</span>
+                                                </div>
+                                                <div class="features__item">
+                                                    <span class="features__icon"><img src="img/svg/icons/kitchen.svg" alt></span>
+                                                    <span class="features__txt">Европейская кухня</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-block__footer">
+                                                <a href="#" class="btn main-btn" target="_blank"><span>меню кофейни</span></a>
+                                            </div>
+                                        </div>
+                                        <div data-block="2">
+                                            <div class="mb-24 page-content">
+                                                <p>Какое‑нибудь небольшое описание о&nbsp;том, что&nbsp;ждёт гостя в&nbsp;кофейне. Какое‑нибудь небольшое описание
+                                                    о&nbsp;том,
+                                                    что&nbsp;ждёт гостя в&nbsp;кофейне. Какое‑нибудь небольшое описание о&nbsp;том, что&nbsp;ждёт гостя в&nbsp;кофейне.
+                                                    Какое‑нибудь небольшое описание о&nbsp;том, что&nbsp;ждёт гостя в&nbsp;кофейне.</p>
+                                            </div>
+                                            <div class="mb-24 features">
+                                                <div class="features__item">
+                                                    <span class="features__icon"><img src="img/svg/icons/clock.svg" alt></span>
+                                                    <span class="features__txt">07:00–17:00</span>
+                                                </div>
+                                                <div class="features__item">
+                                                    <span class="features__icon"><img src="img/svg/icons/people.svg" alt></span>
+                                                    <span class="features__txt">До 80 человек</span>
+                                                </div>
+                                                <div class="features__item">
+                                                    <span class="features__icon"><img src="img/svg/icons/area.svg" alt></span>
+                                                    <span class="features__txt">Площадь 250 м²</span>
+                                                </div>
+                                                <div class="features__item">
+                                                    <span class="features__icon"><img src="img/svg/icons/phone.svg" alt></span>
+                                                    <span class="features__txt">+7 900 555-66-66</span>
+                                                </div>
+                                                <div class="features__item">
+                                                    <span class="features__icon"><img src="img/svg/icons/kitchen.svg" alt></span>
+                                                    <span class="features__txt">Европейская кухня</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-block__footer">
+                                                <a href="#" class="btn main-btn" target="_blank"><span>меню ресторана</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--gallery-->
+<div class="swiper-4 gallery">
+    <div class="container">
+        <div class="sec-top">
+            <div class="sec-top__r">
+                <div class="nav-btns">
+                    <button class="nav-btn nav-btn--prev"><svg><use xlink:href="img/svg/sprite.svg#btn-prev"></use></svg></button>
+                    <button class="nav-btn nav-btn--next"><svg><use xlink:href="img/svg/sprite.svg#btn-next"></use></svg></button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-1.webp" type="image/webp"><img src="img/content/gallery-1.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-2.webp" type="image/webp"><img src="img/content/gallery-2.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-3.webp" type="image/webp"><img src="img/content/gallery-3.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-4.webp" type="image/webp"><img src="img/content/gallery-4.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-1.webp" type="image/webp"><img src="img/content/gallery-1.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-2.webp" type="image/webp"><img src="img/content/gallery-2.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+                </section>
+                <!--about-->
+                <section class="section about">
+                    <!--info-block-->
+                    <section class="mb-60 info-block info-block--lobby">
+                        <div class="container">
+                            <div class="sec-top">
+                                <div class="page-lbl">[лобби-бар]</div>
+                                <div class="sec-top__r">
+                                    <h2>Место для деловой встречи, неспешного кофе или коктейля перед выходом в город</h2>
+                                </div>
+                            </div>
+                            <div class="grid-2col info-block__row">
+                                <div class="info-block__l">
+                                    <div class="info-block__l-wrapper">
+                                        <div class="media-el info-block__img">
+                                            <picture><source srcset="img/content/bar.webp" type="image/webp"><img src="img/content/bar.jpg" alt></picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-block__r">
+                                    <div class="mb-24 page-content">
+                                        <p>Также&nbsp;в&nbsp;нашем лобби-баре вас&nbsp;ждёт широкий выбор напитков и&nbsp;лёгких закусок&nbsp;— отличное место для&nbsp;отдыха
+                                            и&nbsp;общения в&nbsp;любое время&nbsp;дня.</p>
+                                    </div>
+                                    <div class="mb-24 features">
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/clock.svg" alt></span>
+                                            <span class="features__txt">07:00–17:00</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/people.svg" alt></span>
+                                            <span class="features__txt">До 80 человек</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/area.svg" alt></span>
+                                            <span class="features__txt">Площадь 250 м²</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/phone.svg" alt></span>
+                                            <span class="features__txt">+7 900 555-66-66</span>
+                                        </div>
+                                        <div class="features__item">
+                                            <span class="features__icon"><img src="img/svg/icons/kitchen.svg" alt></span>
+                                            <span class="features__txt">Европейская кухня</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-block__footer">
+                                        <a href="#" class="btn main-btn" target="_blank"><span>меню</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--gallery-->
+<div class="swiper-4 gallery">
+    <div class="container">
+        <div class="sec-top">
+            <div class="sec-top__r">
+                <div class="nav-btns">
+                    <button class="nav-btn nav-btn--prev"><svg><use xlink:href="img/svg/sprite.svg#btn-prev"></use></svg></button>
+                    <button class="nav-btn nav-btn--next"><svg><use xlink:href="img/svg/sprite.svg#btn-next"></use></svg></button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-1.webp" type="image/webp"><img src="img/content/gallery-1.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-2.webp" type="image/webp"><img src="img/content/gallery-2.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-3.webp" type="image/webp"><img src="img/content/gallery-3.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-4.webp" type="image/webp"><img src="img/content/gallery-4.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-1.webp" type="image/webp"><img src="img/content/gallery-1.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <!--item-gall-->
+<div class="item-gall">
+    <div class="media-cover"><picture><source srcset="img/content/gallery-2.webp" type="image/webp"><img src="img/content/gallery-2.jpg" alt></picture></div>
+    <div class="item-gall__features">
+        
+    </div>
+</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+                </section>
+            </main>
+            <!--footer-->
+<footer class="footer ">
+    <div class="container">
+        <div class="mb-40 footer__logo"><a href="#"><img src="img/svg/logo.svg" alt="Логотип Марков"></a></div>
+        <div class="mb-40 footer__rows">
+            <div class="footer__row">
+                <div class="footer__contacts">
+                    <div class="footer__contacts-item">
+                        <p class="h5"><a href="tel:89000090000">+7 900 009-00-00</a></p>
+                        <p class="h5"><a href="mailto:test@mail.com">test@mail.com</a></p>
+                        <p>Служба бронирования</p>
+                    </div>
+                    <div class="footer__contacts-item">
+                        <p class="h5"><a href="tel:89000090000">+7 900 009-00-00</a></p>
+                        <p>Служба приёма и&nbsp;размещения</p>
+                    </div>
+                    <div class="footer__contacts-item footer__contacts-item--adress">
+                        <p class="h5">603001, Россия, Нижегородская область,г..&nbsp;Нижний Новгород, ул..&nbsp;Ильинская, 1А</p>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <ul>
+                        <li><a href="#" target="_blank">Whats up</a></li>
+                        <li><a href="#" target="_blank">Telegram</a></li>
+                        <li><a href="#" target="_blank">You tube</a></li>
+                        <li><a href="#" target="_blank">Vk</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__navs">
+                    <nav>
+                        <ul>
+                            <li><a href="#">«Семейный» люкс 2-х комнатный</a></li>
+                            <li><a href="#">Люкс с ванной</a></li>
+                            <li><a href="#">2-х уровневый люкс</a></li>
+                            <li><a href="#">2-х уровневый делюкс</a></li>
+                            <li><a href="#">Стандарт для&nbsp;маломобильных гостей</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Стандарт твин</a></li>
+                            <li><a href="#">Стандарт дабл</a></li>
+                            <li><a href="#">Комфорт твин</a></li>
+                            <li><a href="#">Комфорт дабл</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Об отеле</a></li>
+                            <li><a href="#">Ресторан и&nbsp;бар</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Акции</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__texts">
+                    <p><a href="#" target="_blank">Политика конфиденциальности и&nbsp;условия обработки персональных данных.</a></p>
+                    <p><a href="#" target="_blank">Внутренние правила проживания и&nbsp;пользования услугами</a></p>
+                    <p><a href="#" target="_blank">Выписка из&nbsp;единого реестра объектов классификации</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copy">2005–2026 © сайт.ru</p>
+            <div class="footer__dev">
+                <span>Разработка</span>
+                <a href="https://omniagency.ru/" target="_blank" rel="nofollow">
+                    <img src="img/svg/dev.svg" alt="Omniagency">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+            <!--cookie-->
+<div class="cookie fixed-block" id="cookie-popup">
+    <div class="cookie__inner">
+        <button class="btn-cross" onclick="Utils.CookieUtils.hide()"></button>
+        <div class="mb-40 cookie__content">
+            <h3>Мы используем cookies.</h3>
+            <p>Используя сайт, вы&nbsp;соглашаетесь с&nbsp;нашей политикой использования cookie-файлов. Cookies можно отключить в&nbsp;настройках вашего браузера.</p>
+        </div>
+        <div class="cookie__btns">
+            <button class="btn stroke-btn cookie__accept"><span>хорошо</span></button>
+        </div>
+    </div>
+</div>
+<!--map-modal-->
+<modal class="custom-scroll modal map-modal" id="map-modal">
+    <div class="custom-scroll modal__content">
+        <button type="button" class="btn-cross modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="mb-24 modal__top">
+            <h2 class="h3">Апарт-отель «Марков»</h2>
+        </div>
+        <div class="map-modal__inner">
+            <p>603001, Россия, Нижегородская область<br>г..&nbsp;Нижний Новгород,&nbsp;ул..&nbsp;Ильинская, 1А</p>
+            <p><a href="tel:88001001033">8 800 100-10-33</a></p>
+            <a
+                href="https://yandex.com/maps/47/nizhny-novgorod/house/ilyinskaya_ulitsa_1a/YEoYfw5lSkIAQFtsfX9zeH9jZg==/?ll=43.995378%2C56.329302&source=constructorLink&um=constructor%3A346b5767c6477f6b6884779aabeef53275e5d7556bcb29c57dc4ac516b058219&z=17.11"
+                target="_blank" class="btn text-btn"><span>открыть навигатор</span></a>
+        </div>
+    </div>
+</modal>
+<!--events-modal-->
+<modal class="custom-scroll modal events-modal" id="events-modal">
+    <div class="custom-scroll modal__content">
+        <button type="button" class="btn-cross modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="mb-24 modal__top">
+            <h2 class="h3">Какое мероприятие хотели&nbsp;бы устроить?</h2>
+        </div>
+        <form class="form" novalidate onsubmit="event.preventDefault();Utils.FormUtils.formReset(this);Utils.ModalUtils.openSuccessMod()">
+            <input type="hidden" value data-datepicker-value>
+            <div class="mb-24 form__items">
+                <div class="ui-control ui-input">
+                    <div class="ui-input__inp">
+                        <input type="text" placeholder=" " required>
+                        <div class="ui-input__placeholder">Ваше имя *</div>
+                        <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                    </div>
+                    <span data-error>Заполните поле</span>
+                </div>
+                <div class="ui-control ui-input">
+                    <div class="ui-input__inp">
+                        <input type="email" placeholder=" " required>
+                        <div class="ui-input__placeholder">E-mail *</div>
+                        <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                    </div>
+                    <span data-error>Заполните поле</span>
+                </div>
+                <div class="ui-control ui-input">
+                    <div class="ui-input__inp">
+                        <input type="tel" placeholder=" " required>
+                        <div class="ui-input__placeholder">Телефон *</div>
+                        <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                    </div>
+                    <span data-error>Заполните поле</span>
+                </div>
+                <div class="ui-control ui-input">
+                    <textarea placeholder="Опишите мероприятие"
+                        oninput="this.style.height = '';this.style.height = this.scrollHeight + 'px'"></textarea>
+                </div>
+            </div>
+            <div class="h4">Выберите желаемое время звонка:</div>
+            <div class="mb-24 form__items">
+                <div class="dropdown dropdown--date" aria-expanded="false">
+                    <div class="dropdown__header">
+                        <svg><use xlink:href="img/svg/sprite.svg#date"></use></svg>
+                        <span>29 октября 2025</span>
+                        <svg class="dropdown__icon"><use xlink:href="img/svg/sprite.svg#chevron-bot"></use></svg>
+                    </div>
+                    <div class="dropdown__body">
+                        <div class="custom-scroll">
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown radio-select" aria-expanded="false">
+                    <div class="dropdown__header">
+                        <svg><use xlink:href="img/svg/sprite.svg#time"></use></svg>
+                        <span>09:00–10:00</span>
+                        <svg class="dropdown__icon"><use xlink:href="img/svg/sprite.svg#chevron-bot"></use></svg>
+                    </div>
+                    <div class="dropdown__body">
+                        <div class="custom-scroll">
+                            <div class="dropdown__options">
+                                <label>
+                                    <input type="radio" name="event-time">
+                                    <span>09:00–10:00</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="event-time">
+                                    <span>10:00–11:00</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="event-time">
+                                    <span>11:00–12:00</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="event-time">
+                                    <span>12:00–13:00</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="event-time">
+                                    <span>13:00–14:00</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__footer">
+                <div class="mb-24 ui-control">
+                    <label class="ui-checkbox">
+                        <input type="checkbox" required>
+                        <span>Отправляя данную форму, вы&nbsp;соглашаетесь <a href="#" target="_blank">с&nbsp;Политикой конфиденциальности</a></span>
+                    </label>
+                    <span data-error>Требуется согласие</span>
+                </div>
+                <button type="submit" class="btn main-btn" onclick="Utils.FormUtils.formValidate(event, this.closest('form'))">
+                    <span>Отправить</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</modal>
+<!--success-modal-->
+<modal class="custom-scroll modal success-modal" id="success-modal">
+    <div class="custom-scroll modal__content">
+        <button type="button" class="btn-cross modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="mb-24 modal__top">
+            <h2 class="h3"></h2>
+            <p></p>
+        </div>
+        <button class="btn stroke-btn modal__close">
+            <span></span>
+        </button>
+    </div>
+</modal>
+<!--error-modal-->
+<modal class="custom-scroll modal error-modal" id="error-modal">
+    <div class="custom-scroll modal__content">
+        <button type="button" class="btn-cross modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="mb-24 modal__top">
+            <h2 class="h3"></h2>
+            <p></p>
+        </div>
+        <button class="btn main-btn modal__close">
+            <span></span>
+        </button>
+    </div>
+</modal>
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+<script>
+    let center = [56.329302, 43.995377];
+    let coords = [56.329302, 43.995377]
+    let contactsMap
+    function init() {
+        contactsMap = new ymaps.Map('contacts-map', {
+            center: center,
+            zoom: 15
+        });
+
+        setmapDefaults(contactsMap);
+        const placemark = new ymaps.Placemark(coords, {}, {
+                iconLayout: "default#image",
+                iconImageHref: "img/svg/map-marker.svg",
+                iconImageSize: [72, 84],
+                iconImageOffset: [-36, -42],
+                cursor: "grab",
+                hideIconOnBalloonOpen: false,
+                balloonOffset: [130, 0]
+            }
+        );
+
+        contactsMap.geoObjects.add(placemark);
+    }
+    ymaps.ready(init);
+</script>
+
+        </div>
+        <!--scripts-->
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/libs/inputmask.min.js"></script>
+<script src="js/libs/beerslider.min.js"></script>
+<script src="js/libs/air-datepicker.min.js"></script>
+<script src="js/main.js"></script>
+    </body>
+
+</html>

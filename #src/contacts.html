@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <%- include('partials/head.ejs', {
+    "title": "Контакты"
+    })%>
+
+    <body>
+        <div class="wrap">
+            <%- include('partials/header.ejs', {"main": false})%>
+            <!--main-->
+            <main class="main">
+                <!--contacts-->
+                <section class="section contacts">
+                    <div class="mb-40 container">
+                        <div class="page-top">
+                            <h1>Контакты</h1>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <div class="map" id="contacts-map"></div>
+                    </div>
+                </section>
+                <!--info-block-->
+                <section class="section info-block info-block--contacts">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[Контакты]</div>
+                        </div>
+                        <div class="mb-60 grid-2col info-block__row">
+                            <div class="info-block__l">
+                                <div class="info-block__l-wrapper">
+                                    <div class="mb-40 info-block__address">
+                                        <p class="h4 mb-24">603001, Россия, Нижегородская область&nbsp;г.Нижний Новгород,&nbsp;ул.&nbsp;Ильинская, 1А</p>
+                                        <a href="https://yandex.com/maps/47/nizhny-novgorod/house/ilyinskaya_ulitsa_1a/YEoYfw5lSkIAQFtsfX9zeH9jZg==/?ll=43.995378%2C56.329302&source=constructorLink&um=constructor%3A346b5767c6477f6b6884779aabeef53275e5d7556bcb29c57dc4ac516b058219&z=17.11" target="_blank" class="btn stroke-btn"><span>Построить маршрут</span></a>
+                                    </div>
+                                    <div class="info-block__contacts">
+                                        <div class="item-contact">
+                                            <div class="item-contact__title">Отдел бронирования</div>
+                                            <div class="item-contact__row">
+                                                <a href="tel:88001001033" class="item-contact__value">8 800 100-10-33</a>
+                                                <div class="social-list">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" target="_blank">
+                                                                <svg>
+                                                                    <use xlink:href="img/svg/sprite.svg#telegram"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" target="_blank">
+                                                                <svg>
+                                                                    <use xlink:href="img/svg/sprite.svg#whatsapp"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-contact">
+                                            <div class="item-contact__title">Служба приёма и размещения</div>
+                                            <a href="tel:88001001033" class="item-contact__value">8 800 100-10-33</a>
+                                        </div>
+                                        <div class="item-contact">
+                                            <div class="item-contact__title">Ресторан</div>
+                                            <a href="tel:88001001033" class="item-contact__value">8 800 100-10-33</a>
+                                        </div>
+                                        <div class="item-contact">
+                                            <div class="item-contact__title">Лобби-бар</div>
+                                            <a href="tel:88001001033" class="item-contact__value">8 800 100-10-33</a>
+                                        </div>
+                                        <div class="item-contact">
+                                            <div class="item-contact__title">Отдел продаж</div>
+                                            <a href="mailto:sales@mail.ru" class="item-contact__value">sales@mail.ru</a>
+                                        </div>
+                                        <div class="item-contact">
+                                            <div class="item-contact__title">Реквизиты</div>
+                                            <a href="#" download class="btn text-btn item-contact__value">
+                                                <span>Скачать реквизиты</span>
+                                                <span>&nbsp;(PDF 35 Mb)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-block__r">
+                                <!--main-form-->
+                                <div class="main-form">
+                                    <div class="mb-20 main-form__header">
+                                        <h3>Оставить заявку</h3>
+                                        <p>Желаете забронировать номер или&nbsp;возникли вопросы? Отправьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее
+                                            время!</p>
+                                    </div>
+                                    <form class="form" novalidate
+                                        onsubmit="event.preventDefault();Utils.FormUtils.formReset(this);Utils.ModalUtils.openSuccessMod()">
+                                        <div class="mb-24 form__items">
+                                            <div class="ui-control ui-input">
+                                                <div class="ui-input__inp">
+                                                    <input type="text" placeholder=" " required>
+                                                    <div class="ui-input__placeholder">Ваше имя *</div>
+                                                    <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                                                </div>
+                                                <span data-error>Заполните поле</span>
+                                            </div>
+                                            <div class="ui-control ui-input">
+                                                <div class="ui-input__inp">
+                                                    <input type="email" placeholder=" " required>
+                                                    <div class="ui-input__placeholder">E-mail *</div>
+                                                    <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                                                </div>
+                                                <span data-error>Заполните поле</span>
+                                            </div>
+                                            <div class="ui-control ui-input">
+                                                <div class="ui-input__inp">
+                                                    <input type="tel" placeholder=" " required>
+                                                    <div class="ui-input__placeholder">Телефон *</div>
+                                                    <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                                                </div>
+                                                <span data-error>Заполните поле</span>
+                                            </div>
+                                            <div class="ui-control ui-input">
+                                                <textarea placeholder="Сообщение"
+                                                    oninput="this.style.height = '';this.style.height = this.scrollHeight + 'px'"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form__footer">
+                                            <div class="mb-24 ui-control">
+                                                <label class="ui-checkbox">
+                                                    <input type="checkbox" required>
+                                                    <span>Отправляя данную форму, вы&nbsp;соглашаетесь <a href="#" target="_blank">с&nbsp;Политикой
+                                                            конфиденциальности</a></span>
+                                                </label>
+                                                <span data-error>Требуется согласие</span>
+                                            </div>
+                                            <button type="submit" class="btn main-btn" onclick="Utils.FormUtils.formValidate(event, this.closest('form'))">
+                                                <span>Отправить</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-2col info-block__row">
+                            <div class="info-block__l">
+                                <div class="media-el info-block__img">
+                                    <img src="img/content/contacts-img.jpg" alt>
+                                </div>
+                            </div>
+                            <div class="info-block__r">
+                                <!--main-form-->
+                                <div class="main-form">
+                                    <div class="mb-20 main-form__header">
+                                        <h3>Подписаться на&nbsp;рассылку</h3>
+                                        <p>Узнайте больше о&nbsp;наших акциях и&nbsp;событиях</p>
+                                    </div>
+                                    <form class="form" novalidate
+                                        onsubmit="event.preventDefault();Utils.FormUtils.formReset(this);Utils.ModalUtils.openSuccessMod()">
+                                        <div class="mb-24 form__items">
+                                            <div class="ui-control ui-input">
+                                                <div class="ui-input__inp">
+                                                    <input type="text" placeholder=" ">
+                                                    <div class="ui-input__placeholder">Ваше имя</div>
+                                                    <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                                                </div>
+                                                <span data-error>Заполните поле</span>
+                                            </div>
+                                            <div class="ui-control ui-input">
+                                                <div class="ui-input__inp">
+                                                    <input type="email" placeholder=" " required>
+                                                    <div class="ui-input__placeholder">E-mail *</div>
+                                                    <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                                                </div>
+                                                <span data-error>Заполните поле</span>
+                                            </div>
+                                            <div class="ui-control ui-input">
+                                                <div class="ui-input__inp">
+                                                    <input type="text" placeholder=" ">
+                                                    <div class="ui-input__placeholder">Город</div>
+                                                    <button type="button" class="btn-cross ui-input__reset" aria-label="Очистить поле"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__footer">
+                                            <div class="mb-24 ui-control">
+                                                <label class="ui-checkbox">
+                                                    <input type="checkbox" required>
+                                                    <span>Отправляя данную форму, вы&nbsp;соглашаетесь <a href="#" target="_blank">с&nbsp;Политикой
+                                                            конфиденциальности</a></span>
+                                                </label>
+                                                <span data-error>Требуется согласие</span>
+                                            </div>
+                                            <button type="submit" class="btn main-btn" onclick="Utils.FormUtils.formValidate(event, this.closest('form'))">
+                                                <span>Отправить</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <%- include('partials/rooms-swiper.ejs', {"title": "Выберите свой идеальный номер", "showMore": true, "text": true})%>
+            </main>
+            <%- include('partials/footer.ejs', {"main": false})%>
+            <%- include('partials/modal.ejs')%>
+            <%- include('partials/map-contacts.ejs')%>
+        </div>
+        <%- include('partials/js.ejs')%>
+    </body>
+
+</html>

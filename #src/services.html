@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <%- include('partials/head.ejs', {
+    "title": "Услуги"
+    })%>
+
+    <body>
+        <div class="wrap">
+            <%- include('partials/header.ejs', {"main": false})%>
+            <!--main-->
+            <main class="main">
+                <!--services-p-->
+                <section class="section services-p">
+                    <div class="container">
+                        <div class="mb-40 page-top">
+                            <h1>Услуги</h1>
+                        </div>
+                        <section class="section services-p__sec">
+                            <div class="sec-top">
+                                <div class="page-lbl">[бесплатно]</div>
+                                <div class="sec-top__r">
+                                    <h2>Входят в&nbsp;стоимость номера</h2>
+                                </div>
+                            </div>
+                            <div class="services-p__items">
+                                <%- include('partials/accordion.ejs', { title: 'Парковка', active: true, image: true, innerTxt: false }) %>
+                                <%- include('partials/accordion.ejs', { title: 'Обслуживание номеров', active: false, image: true, innerTxt: false }) %>
+                                <%- include('partials/accordion.ejs', { title: 'Wi/Fi в&nbsp;номерах и&nbsp;лобби отеля', active: false, image: true, innerTxt: false
+                                }) %>
+                                <%- include('partials/accordion.ejs', { title: 'Бронирование билетов/такси/услуги ксерокопирования', active: false, image: true,
+                                innerTxt: false }) %>
+                            </div>
+                        </section>
+                        <section class="section services-p__sec">
+                            <div class="sec-top">
+                                <div class="page-lbl">[дополнительная оплата]</div>
+                                <div class="sec-top__r">
+                                    <h2>Дополнительные услуги по&nbsp;запросу</h2>
+                                </div>
+                            </div>
+                            <div class="services-p__items">
+                                <%- include('partials/accordion.ejs', {
+                                title: 'Консьерж-сервис',
+                                active: true,
+                                image: false,
+                                innerTxt: `
+                                <p>Консьерж-сервис отеля&nbsp;— это&nbsp;ваш&nbsp;личный помощник в&nbsp;мире высококлассного отдыха. Мы&nbsp;предлагаем:</p>
+                                <ul>
+                                    <li>индивидуальный подход к&nbsp;каждому гостю, помогая организовать идеальный отдых или&nbsp;бизнес-поездку</li>
+                                    <li>бронирование билетов на&nbsp;мероприятия, экскурсии, рестораны, заказ цветов и&nbsp;транспортные услуги</li>
+                                    <li>рекомендации экспертов по&nbsp;лучшим местам отдыха и&nbsp;развлечений в&nbsp;городе, а&nbsp;также секретные советы, доступные только
+                                        нашим гостям</li>
+                                </ul>
+                                <p>Наша команда консьержей&nbsp;— это&nbsp;профессионалы, которые знают, как&nbsp;сделать ваше пребывание незабываемым. Воспользуйтесь услугами
+                                    консьерж-сервиса, чтобы&nbsp;ваш&nbsp;отдых был&nbsp;беззаботным и&nbsp;наполнен только приятными моментами.</p>
+                                `
+                                }) %>
+
+                                <%- include('partials/accordion.ejs', { title: 'Трансфер до&nbsp;SPA', active: false, image: false, innerTxt: false }) %>
+                                <%- include('partials/accordion.ejs', { title: 'Трансфер до&nbsp;любой локации города', active: false, image: true, innerTxt: false }) %>
+                                <%- include('partials/accordion.ejs', { title: 'Организация экскурсий', active: false, image: false, innerTxt: false }) %>
+                                <%- include('partials/accordion.ejs', { title: 'Организация зон&nbsp;частных мероприятий/переговорных', active: false, image: false,
+                                innerTxt: false }) %>
+                                <%- include('partials/accordion.ejs', { title: 'Организация анимационной программы', active: false, image: false, innerTxt: false }) %>
+                                <%- include('partials/accordion.ejs', { title: 'Проживание с&nbsp;питомцем', active: false, image: false, innerTxt: false }) %>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <!--events-->
+                <section class="section events">
+                    <div class="container">
+                        <div class="sec-top">
+                            <div class="page-lbl">[организация мероприятий]</div>
+                            <div class="sec-top__r">
+                                <h2 class="h3">Поможем организовать мероприятие и&nbsp;развлечение по&nbsp;вашему желанию</h2>
+                            </div>
+                        </div>
+                        <div class="ml-50 mb-40 events__content">
+                            <div class="mb-24 page-content">
+                                <p>Хотите провести незабываемый вечер, детский праздник или&nbsp;деловую встречу? Мы&nbsp;с&nbsp;радостью поможем организовать любое
+                                    мероприятие
+                                    на&nbsp;вашей территории или&nbsp;в&nbsp;близлежащих локациях.</p>
+                                <p>Расскажите нам, какое событие вы&nbsp;хотите устроить, и&nbsp;мы&nbsp;подберём лучшие варианты и&nbsp;партнёров
+                                    для&nbsp;его&nbsp;реализации,
+                                    чтобы&nbsp;сделать ваше пребывание у&nbsp;нас&nbsp;ещё&nbsp;ярче и&nbsp;комфортнее.</p>
+                            </div>
+                            <button class="btn main-btn mod-open-btn" data-modal="events-modal"><span>заполнить форму</span></button>
+                        </div>
+                        <div class="grid-2col events__images">
+                            <div class="media-cover">
+                                <img src="img/content/events-1.jpg" alt>
+                            </div>
+                            <div class="media-cover">
+                                <img src="img/content/events-2.jpg" alt>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <%- include('partials/footer.ejs', {"main": false})%>
+            <%- include('partials/modal.ejs')%>
+        </div>
+        <%- include('partials/js.ejs')%>
+    </body>
+
+</html>

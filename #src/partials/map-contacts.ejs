@@ -1,0 +1,54 @@
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+<script>
+    let center = [56.329302, 43.995377];
+    let coords = [56.329302, 43.995377]
+    let contactsMap
+    const mapModal = document.querySelector("#map-modal")
+    let balloonTitle = 'Апарт-отель «Марков»'
+    let balloonBody = `<p>603001, Россия, Нижегородская область<br>г..&nbsp;Нижний Новгород,&nbsp;ул..&nbsp;Ильинская, 1А</p>
+        <p><a href="tel:88001001033">8 800 100-10-33</a></p>
+        <a href="https://yandex.com/maps/47/nizhny-novgorod/house/ilyinskaya_ulitsa_1a/YEoYfw5lSkIAQFtsfX9zeH9jZg==/?ll=43.995378%2C56.329302&source=constructorLink&um=constructor%3A346b5767c6477f6b6884779aabeef53275e5d7556bcb29c57dc4ac516b058219&z=17.11" target="_blank" class="btn text-btn"><span>открыть навигатор</span></a>`
+    function init() {
+        contactsMap = new ymaps.Map('contacts-map', {
+            center: center,
+            zoom: 15
+        });
+
+        setmapDefaults(contactsMap);
+        const placemark = new ymaps.Placemark(coords, {
+            balloonContent: `
+                <div class="balloon">
+                    <div class="balloon__header">
+                        <h3>${balloonTitle}</h3>
+                    </div>
+                    <div class="balloon__body">${balloonBody}</div>
+                </div>`
+            }, {
+                iconLayout: "default#image",
+                iconImageHref: "img/svg/map-marker.svg",
+                iconImageSize: [72, 84],
+                iconImageOffset: [-36, -42],
+                cursor: "pointer",
+                hideIconOnBalloonOpen: false,
+                balloonOffset: [120, -10]
+            }
+        );
+
+        contactsMap.geoObjects.add(placemark);
+
+        placemark.events.add('click', e => {
+            if (mapModal && window.innerWidth < 767.98) {
+                e.preventDefault()
+                Utils.ModalUtils.openModal(mapModal);
+            }
+        });
+
+        contactsMap.events.add('click', () => {
+            contactsMap.balloon.close();
+            if (mapModal) {
+                Utils.ModalUtils.closeModal(mapModal);
+            }
+        });
+    }
+    ymaps.ready(init);
+</script>

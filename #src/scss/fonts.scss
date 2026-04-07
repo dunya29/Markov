@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "OverpassMono";
+    font-weight: 300;
+    font-style: normal;
+    src: local("OverpassMono Light"), local("OverpassMono-Light"), url("../fonts/OverpassMono-Light.woff2") format("woff2"), url("../fonts/OverpassMono-Light.woff") format("woff"), url("../fonts/OverpassMono-Light.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "OverpassMono";
+    font-weight: 400;
+    font-style: normal;
+    src: local("OverpassMono Regular"), local("OverpassMono-Regular"), url("../fonts/OverpassMono-Regular.woff2") format("woff2"), url("../fonts/OverpassMono-Regular.woff") format("woff"), url("../fonts/OverpassMono-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "OverpassMono";
+    font-weight: 500;
+    font-style: normal;
+    src: local("OverpassMono Medium"), local("OverpassMono-Medium"), url("../fonts/OverpassMono-Medium.woff2") format("woff2"), url("../fonts/OverpassMono-Medium.woff") format("woff"), url("../fonts/OverpassMono-Medium.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "CormorantGaramond";
+    font-weight: 400;
+    font-style: normal;
+    src: local("CormorantGaramond Regular"), local("CormorantGaramond-Regular"), url("../fonts/CormorantGaramond-Regular.woff2") format("woff2"), url("../fonts/CormorantGaramond-Regular.woff") format("woff"), url("../fonts/CormorantGaramond-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "CormorantGaramond";
+    font-weight: 600;
+    font-style: normal;
+    src: local("CormorantGaramond SemiBold"), local("CormorantGaramond-SemiBold"), url("../fonts/CormorantGaramond-SemiBold.woff2") format("woff2"), url("../fonts/CormorantGaramond-SemiBold.woff") format("woff"), url("../fonts/CormorantGaramond-SemiBold.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "CormorantGaramond";
+    font-weight: 700;
+    font-style: normal;
+    src: local("CormorantGaramond Bold"), local("CormorantGaramond-Bold"), url("../fonts/CormorantGaramond-Bold.woff2") format("woff2"), url("../fonts/CormorantGaramond-Bold.woff") format("woff"), url("../fonts/CormorantGaramond-Bold.ttf") format("truetype");
+    font-display: swap;
+}

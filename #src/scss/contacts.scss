@@ -1,0 +1,181 @@
+.item-contact {
+    padding: 1.6rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    align-items: start;
+    border-bottom: 1px solid rgba(var(--oat-milk-rgb), 0.65);
+    &:nth-child(1) {
+        border-top: 1px solid rgba(var(--oat-milk-rgb), 0.65);
+    }
+    .text-btn {
+        justify-content: flex-start;
+        span:nth-child(2) {
+            color: rgba(var(--oat-milk-rgb), 0.6);
+        }
+    }
+    &__title {
+        @include fz-14;
+        font-weight: 400;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    &__value {
+        font-weight: 500;
+        justify-self: start;
+    }
+    @media (max-width: $bp3) {
+        grid-template-columns: 1fr;
+        padding: 1.3rem 0;
+    }
+     @media (max-width: $bp4) {
+        &__title {
+            @include fz-16
+        }
+    }
+}
+.map {
+    height: 100%;
+    overflow: hidden;
+    [class*="copyrights-pane"] {
+        display: none !important;
+    }
+    [class*="ground-pane"] {
+        filter: grayscale(1) sepia(0.4) saturate(0.8) brightness(1.1);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(var(--oat-milk-rgb), 0.4);
+            mix-blend-mode: multiply;
+            pointer-events: none;
+            z-index: 502;
+        }
+    }
+    [class*="-balloon_layout"] {
+        box-shadow: none !important;
+        animation: balloon-fadeUp 0.35s;
+    }
+    [class*="balloon__layout"] {
+        border-radius: 1rem;
+        background: var(--cloud) !important;
+    }
+    [class*="balloon__close"] {
+        display: none !important;
+    }
+    [class*="balloon__content"] {
+        box-sizing: border-box !important;
+        font-family: var(--font-family) !important;
+        color: var(--primary-color);
+        width: 43.9rem !important;
+        padding: 2rem !important;
+        background: var(--cloud) !important;
+        margin-right: 0 !important;
+        & > * {
+            width: 100% !important;
+            height: max-content !important;
+        }
+        @media (max-width: $bp1) {
+            width: 37rem !important;
+        }
+    }
+    [class*="-balloon__tail"] {
+        width: 2.7rem !important;
+        height: 2.9rem !important;
+        bottom: 2.4rem !important;
+        left: -0.8rem !important;
+        box-shadow: none !important;
+        background: url(../img/svg//balloon-tail.svg) center/contain no-repeat !important;
+        transform: none !important;
+    }
+    [class*="-balloon__tail"]::after {
+        content: none !important;
+    }
+    [class*="-placemark"] [class*="-image"] {
+        @media (max-width: $bp1) {
+            transform: scale(0.85) !important;
+        }
+        @media (max-width: $bp3) {
+            transform: scale(0.75) !important;
+        }
+    }
+}
+@keyframes balloon-fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contacts {
+    .container .contacts__map {
+        height: 46.7vh;
+        max-height: 43.9rem;
+        border: 1px solid rgba(var(--oat-milk-rgb), 0.6);
+    }
+    &__map {
+        min-height: 25rem;
+        height: 67.34vh;
+        max-height: 63.3rem;
+        overflow: hidden;
+    }
+    &__content {
+        p {
+            @include fz-18;
+            @include mb-16;
+        }
+        .text-btn {
+            @include mt-16;
+        }
+    }
+    @media (max-width: $bp1) {
+        .container .contacts__map {
+            max-height: 35.7rem;
+        }
+        &__map {
+            max-height: 63.3rem;
+        }
+    }
+    @media (max-width: $bp4) {
+        .container .contacts__map {
+            height: 43.9rem;
+        }
+        &__map {
+            height: 37.5rem;
+        }
+    }
+}
+.balloon {
+    h3,
+    .h3 {
+        font-family: var(--font-family-heading) !important;
+        @include fz-38;
+        font-weight: 600;
+        line-height: 92%;
+        text-transform: none;
+    }
+    p,
+    .btn {
+        @include fz-16;
+        line-height: 1.2;
+    }
+    p {
+        @include mb-8;
+    }
+    .btn {
+        @include mt-32;
+    }
+    &__header {
+        @include mb-16;
+    }
+}

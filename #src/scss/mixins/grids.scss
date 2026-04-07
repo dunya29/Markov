@@ -1,0 +1,42 @@
+@mixin grid-4 {
+    @include grid;
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: $bp3) {
+        grid-template-columns: repeat(3,1fr);
+    }
+    @media (max-width: $bp4) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: $bp6) {
+        grid-template-columns: 1fr;
+    }
+}
+@mixin grid-3-1 {
+    @include grid;
+    grid-template-columns: 3fr 1fr;
+    @media (max-width: $bp3) {
+        grid-template-columns: 1fr;
+    }
+}
+@mixin grid-3 {
+    @include grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: $bp4) {
+        grid-template-columns: 1fr;
+    }
+}
+@mixin grid-2 {
+    @include grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: $bp4) {
+        grid-template-columns: 1fr;
+    }
+}
+@mixin grid {
+    display: grid;
+    gap: 1rem;
+    align-items: start;
+    @media (max-width: $bp4) {
+        gap: 2.4rem 1rem
+    }
+}

@@ -1,0 +1,32 @@
+ <!--rooms-swiper-->
+<section class="section swiper-4 rooms-swiper">
+    <div class="container">
+        <div class="sec-top">
+            <div class="page-lbl">[номера]</div>
+            <div class="sec-top__r">
+                <h2><%- title %></h2>
+                <div class="nav-btns">
+                    <button class="nav-btn nav-btn--prev"><svg><use xlink:href="img/svg/sprite.svg#btn-prev"></use></svg></button>
+                    <button class="nav-btn nav-btn--next"><svg><use xlink:href="img/svg/sprite.svg#btn-next"></use></svg></button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper fancy-block">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><%- include('item-room.ejs', { nmb: 1, "title": "Стандарт для маломобильных гостей", text }) %></div>
+                <div class="swiper-slide"><%- include('item-room.ejs', { nmb: 2, "title": "2-х уровневый делюкс", text }) %></div>
+                <div class="swiper-slide"><%- include('item-room.ejs', { nmb: 3, "title": "«Семейный» люкс 2-х комнатный", text }) %></div>
+                <div class="swiper-slide"><%- include('item-room.ejs', { nmb: 4, "title": "2-х уровневый делюкс", text }) %></div>
+                <div class="swiper-slide"><%- include('item-room.ejs', { nmb: 2, "title": "Стандарт для маломобильных гостей", text }) %></div>
+                <div class="swiper-slide"><%- include('item-room.ejs', { nmb: 3, "title": "2-х уровневый делюкс", text }) %></div>
+            </div>
+        </div>
+        <% if (showMore) { %>
+        <div class="sec-bottom">
+            <a href="#" class="btn stroke-btn">
+                <span>смотреть все</span>
+            </a>
+        </div>
+        <% } %>
+    </div>
+</section>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <%- include('partials/head.ejs', {
+    "title": "Все предложения"
+    })%>
+
+    <body>
+        <div class="wrap">
+            <%- include('partials/header.ejs', {"main": false})%>
+            <!--main-->
+            <main class="main">
+                <!--cards-->
+                <section class="section cards">
+                    <div class="container">
+                        <div class="mb-120 cards__top">
+                            <h1 class="mb-24 h1--sm">Все предложения</h1>
+                            <p class="mb-24 cards__top-text">Специальные предложения для&nbsp;вашего идеального отдыха</p>
+                            <div class="booking-bar">
+                                <picture>
+                                    <source srcset="img/svg/booking-ex-mob.svg" media="(max-width: 767.98px)">
+                                    <img src="img/svg/booking-ex.svg" alt>
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="cards__wrapper">
+                            <div class="cards__items">
+                                <%- include('partials/item-card.ejs', { nmb: 1 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 2 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 3 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 4 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 4 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 2 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 3 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 1 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 2 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 3 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 1 }) %>
+                                <%- include('partials/item-card.ejs', { nmb: 4 }) %>
+                            </div>
+                            <div class="sec-bottom">
+                                <a href="#" class="btn stroke-btn">
+                                    <span>показать больше</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <%- include('partials/footer.ejs', {"main": false})%>
+            <%- include('partials/modal.ejs')%>
+        </div>
+        <%- include('partials/js.ejs')%>
+    </body>
+
+</html>

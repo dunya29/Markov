@@ -1,0 +1,209 @@
+.cards {
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &-text {
+            max-width: 32rem;
+        }
+    }
+    &__items {
+        @include grid-4;
+        @media (min-width: $bp2) {
+            row-gap: 4rem;
+        }
+        @media (min-width: $bp4) {
+            row-gap: 3.2rem;
+        }
+    }
+    @media (max-width: $bp3) {
+        &__top-text{
+            @include fz-17;
+        }
+    }
+}
+.item-card,
+.item-room {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .text-btn {
+        margin-top: auto;
+    }
+    &__content {
+        padding: 2rem 1.2rem 1.6rem;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .h4 {
+            @include mb-16;
+        }
+        .h4 + p {
+            @include mb-12;
+        }
+        p {
+            @include mb-16;
+        }
+    }
+    @media (max-width: $bp1) {
+        &__content {
+            padding: 2rem 0.8rem 1.2rem;
+        }
+    }
+}
+.item-card {
+    .media-cover {
+        padding-top: 114.16%;
+        &:hover img {
+            transform: scale(1.05);
+        }
+        img {
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+    }
+    &__content {
+        p {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+    }
+    &__promo {
+        @include fz-14;
+        color: rgba(var(--primary-color-rgb), 0.7);
+        text-transform: uppercase;
+        display: block;
+        @include mb-16;
+    }
+}
+.item-room,
+.item-gall {
+    &__features {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 0.6rem;
+        left: 0.6rem;
+        right: 0.6rem;
+        span {
+            line-height: 1;
+            padding: 0.8rem 0.8rem 0.5rem;
+            background: var(--cloud);
+            display: flex;
+            align-items: center;
+            margin: 0.2rem;
+        }
+    }
+}
+.item-room {
+    &__main {
+        position: relative;
+    }
+    &__preview {
+        padding-top: 88.05%;
+        position: relative;
+        overflow: hidden;
+    }
+    &__hovers,
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        user-select: none;
+    }
+    &__img {
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        background:
+            url(../img/svg/skeleton.svg) center / cover,
+            no-repeat;
+        &.active {
+            opacity: 1;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__hovers {
+        display: flex;
+        span {
+            flex: 1;
+            cursor: pointer;
+        }
+    }
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0.7rem;
+        right: 0.7rem;
+        bottom: 1.9rem;
+        span {
+            flex-shrink: 0;
+            width: 0.6rem;
+            height: 0.6rem;
+            margin: 0.3rem;
+            border-radius: 50%;
+            background: rgba(var(--cloud-rgb), 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &.active {
+                background: var(--cloud);
+            }
+        }
+    }
+    &__features {
+        span {
+            @include fz-13;
+            gap: 0.8rem;
+            img {
+                margin-top: -0.25rem;
+            }
+            @media (max-width: $bp3) {
+                padding: 0.6rem 0.8rem 0.4rem;
+                gap: 0.6rem;
+                img {
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    margin-top: -0.15rem;
+                }
+            }
+        }
+    }
+    @media (max-width: $bp3) {
+        &__content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+.item-gall {
+    position: relative;
+    .media-cover {
+        padding-top: 98.63%;
+    }
+    &__features {
+        span {
+            @include fz-12;
+            text-transform: uppercase;
+            gap: 0.4rem;
+            &:before {
+                content: "";
+                width: 0.4rem;
+                height: 0.4rem;
+                border-radius: 50%;
+                background: var(--primary-color);
+                margin-bottom: 0.4rem;
+            }
+        }
+    }
+}

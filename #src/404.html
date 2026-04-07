@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <%- include('partials/head.ejs', {
+    "title": "404"
+    })%>
+
+    <body>
+        <div class="wrap">
+            <%- include('partials/header.ejs', {"main": false})%>
+            <!--main-->
+            <main class="main">
+                <%- include("partials/breadcrumbs.ejs", {"page": "404"})%>
+                <!--notfound-p-->
+                <section class="section notfound-p">
+                    <div class="container">
+                        <div class="notfound-p__inner">
+                            <div class="mb-40 notfound-p__img">
+                                <img src="img/svg/404.svg" alt="404">
+                            </div>
+                            <h1 class="h4">Страница не найдена</h1>
+                            <p class="mb-24">Вернитесь на главную страницу</p>
+                            <a href="#" class="btn main-btn">
+                                <span>перейти на главную</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <%- include('partials/footer.ejs', {"main": false})%>
+            <%- include('partials/modal.ejs')%>
+        </div>
+        <%- include('partials/js.ejs')%>
+    </body>
+
+</html>
