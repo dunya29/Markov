@@ -591,7 +591,7 @@ window.addEventListener("DOMContentLoaded", () => {
     roomsOnHover()
     setTimeout(() => {
         animate()
-    }, 1000);
+    }, animSpd);
 
 });
 
