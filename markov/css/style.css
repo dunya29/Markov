@@ -358,10 +358,6 @@ body::-webkit-scrollbar {
 }
 
 html {
-  font-size: 10px;
-}
-
-html {
   font-size: 0.625rem;
 }
 
@@ -4252,10 +4248,6 @@ p a:hover {
     --content-width: 100%;
     --container-offset: clamp(6rem, 0.04vw, 10rem);
     --container-width: 100%;
-  }
-
-  html {
-    font-size: 16px;
   }
 }
 
