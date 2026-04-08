@@ -1853,110 +1853,6 @@ p a:hover {
   border-color: rgba(var(--beige-rgb), 0.4);
 }
 
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: var(--white);
-  z-index: 1000;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-}
-
-.preloader__inner {
-  width: 267px;
-  height: 232px;
-  position: relative;
-}
-
-.preloader__image2 {
-  fill: var(--primary-color);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 3;
-  display: block;
-  width: 100%;
-  height: 0%;
-  will-change: height, opacity;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  -webkit-animation: imgLoading 0.4s 0.5s linear both;
-  animation: imgLoading 0.4s 0.5s linear both;
-}
-
-.preloader__image1 {
-  position: relative;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke: var(--primary-color);
-  stroke-dasharray: 0, 267;
-  stroke-dashoffset: -55;
-  -webkit-animation: dash 0.5s linear both;
-  animation: dash 0.5s linear both;
-}
-
-@-webkit-keyframes dash {
-  0% {
-    stroke-dasharray: 0, 267;
-  }
-
-  100% {
-    stroke-dasharray: 267, 0;
-  }
-}
-
-@keyframes dash {
-  0% {
-    stroke-dasharray: 0, 267;
-  }
-
-  100% {
-    stroke-dasharray: 267, 0;
-  }
-}
-
-@-webkit-keyframes imgLoading {
-  0% {
-    height: 0%;
-    opacity: 1;
-  }
-
-  100% {
-    height: 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes imgLoading {
-  0% {
-    height: 0%;
-    opacity: 1;
-  }
-
-  100% {
-    height: 100%;
-    opacity: 1;
-  }
-}
-
 .header {
   background: var(--cloud);
   position: fixed;
@@ -5052,11 +4948,6 @@ p a:hover {
 
   .air-datepicker {
     --adp-width: 100%.8rem;
-  }
-
-  .preloader__inner {
-    width: 190px;
-    height: 166px;
   }
 
   .header__desk-inner {
