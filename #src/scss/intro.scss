@@ -104,7 +104,7 @@
     }
     @media (min-width: $bp4) {
         .container {
-            min-height: calc(100dvh - var(--header-h));
+            min-height: calc(100vh - var(--header-h));
             padding-top: max(6rem, 10vh);
             padding-bottom: max(6rem, 10vh);
         }

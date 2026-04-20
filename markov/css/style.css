@@ -1626,11 +1626,6 @@ p a:hover {
   min-width: 41%;
 }
 
-.main-form__footer .main-btn,
-.main-form__footer .stroke-btn {
-  min-width: 35%;
-}
-
 .swiper {
   min-width: 0;
   overflow: hidden;
@@ -4030,7 +4025,7 @@ p a:hover {
   }
 
   .intro .container {
-    min-height: calc(100dvh - var(--header-h));
+    min-height: calc(100vh - var(--header-h));
     padding-top: max(6rem, 10vh);
     padding-bottom: max(6rem, 10vh);
   }
